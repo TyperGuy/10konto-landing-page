@@ -1,11 +1,10 @@
+"use client"
+
+import { FeaturesContainer } from "./styles"
 
 
 
 
 export const Features = ()=> {
-    return (
-        <section>
-            
-        </section>
-    )
+    return <FeaturesContainer></FeaturesContainer>;
 }

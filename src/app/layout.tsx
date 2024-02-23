@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import './globals.css';
+import StyledComponentsRegistry from '~/lib/registry';
 
 export const metadata: Metadata = {
-  title: "10konto",
-  description: "",
+  title: '10konto',
+  description: '',
 };
 
 export default function RootLayout({
@@ -15,8 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></link>
+      <link href='https://fonts.googleapis.com/css?family=Public Sans' rel='stylesheet'></link>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
