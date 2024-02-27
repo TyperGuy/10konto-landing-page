@@ -1,8 +1,81 @@
+'use client';
 
+import { useState } from 'react';
+import {
+  QASectionCard,
+  QASectionCardButton,
+  QASectionCardDemoImage,
+  QASectionContactsList,
+  QASectionContactsListItem,
+  QASectionContainer,
+  QASectionItem,
+  QASectionItemButton,
+  QASectionItemDescription,
+  QASectionItemTitle,
+  QASectionList,
+  QASectionTitle,
+  QASectionContentContainer,
+} from './styles';
+import { QAItem } from './qa-item';
+import ContactImage from '~/assets/contact.svg';
 
+export const QASection = () => {
+  const [data, setData] = useState([
+    {
+      id: 1,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial <a href="#">clicando aqui.</a>',
+    },
+    {
+      id: 1,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
+    },
+    {
+      id: 1,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
+    },
+    {
+      id: 1,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
+    },
+  ]);
 
-export const QASection = ()=> {
-    return (
-        <section></section>
-    )
-}
+  const avatars = [1, 2, 3, 4];
+  const lastAvatar = avatars.length - 1;
+
+  return (
+    <QASectionContainer>
+      <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
+      <QASectionContentContainer>
+        <QASectionList>
+          {data.map((item) => (
+            <QAItem {...item} key={item.id} />
+          ))}
+        </QASectionList>
+        <QASectionCard>
+          <QASectionCardDemoImage>
+            <ContactImage />
+          </QASectionCardDemoImage>
+          <div className='card-bottom-container'>
+            <QASectionCardButton>Falar com um agente</QASectionCardButton>
+            <QASectionContactsList>
+              {avatars.map((item, index) => (
+                <QASectionContactsListItem>
+                  <img src='/pic.svg' className='pic' alt='' />
+                  {lastAvatar === index && <div className='dot' />}
+                </QASectionContactsListItem>
+              ))}
+            </QASectionContactsList>
+          </div>
+        </QASectionCard>
+      </QASectionContentContainer>
+    </QASectionContainer>
+  );
+};

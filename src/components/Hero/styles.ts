@@ -23,6 +23,7 @@ export const HeroTextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-right: 100px;
 `;
 
 export const HeroTitle = styled.h1`
@@ -34,7 +35,7 @@ export const HeroTitle = styled.h1`
   line-height: 90px;
   letter-spacing: -1.44px;
   color: #003c2f;
-  min-width: 707px;
+  max-width: 707px;
 
   mark {
     background-color: transparent;
@@ -51,7 +52,7 @@ export const HeroText = styled.p`
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-  min-width: 661px;
+  max-width: 661px;
 `;
 
 export const HeroTextContainerButtons = styled.div`
@@ -98,8 +99,9 @@ export const HeroImageContainer = styled.div`
   width: 100%;
 
   img {
-    /* width: 650px;
-    height: 650px; */
-    /* object-fit: scale-down; */
+    width:500px;
+    height: auto;
   }
+
+  
 `;

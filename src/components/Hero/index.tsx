@@ -13,6 +13,7 @@ import {
 } from './styles';
 
 import MouseIcon from '~/assets/Up.svg';
+import AppDemoImage from '~/assets/app.svg'
 
 
 export const Hero = () => {
@@ -37,7 +38,8 @@ export const Hero = () => {
           </HeroTextContainerButtons>
         </HeroTextContainer>
         <HeroImageContainer>
-          <img src="/app.png" />
+          <img src="/app.png" alt="" />
+          {/* <AppDemoImage /> */}
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>
