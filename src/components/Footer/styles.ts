@@ -1,10 +1,13 @@
 import styled from 'styled-components';
-import { CONTAINER_DEFAULT_PROPS, CONTENT_MAX_WIDTH, PADDINGS } from '~/constants/sizes';
+import {
+  CONTAINER_DEFAULT_PROPS,
+  CONTENT_MAX_WIDTH,
+  PADDINGS,
+} from '~/constants/sizes';
 
 export const FooterContainer = styled.section`
   width: 100%;
   min-height: auto;
-  background: linear-gradient(to bottom, #fff 50%, #0f2016 50%);
   padding-left: 187px;
   padding-right: 187px;
   display: flex;
@@ -12,19 +15,58 @@ export const FooterContainer = styled.section`
   align-items: center;
   justify-content: flex-end;
   padding-top: 160px;
+  background: linear-gradient(
+    to bottom,
+    #fff 50%,
+    #0f2016 50%,
+    #0f2016 50%,
+    #0f2016 50%
+  );
+
+  @media (max-width: 1180px) {
+    width: 100%;
+    ${PADDINGS}
+  }
+
+  @media (max-width: 950px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: 750px) {
+    background: linear-gradient(
+      to bottom,
+      #fff 40%,
+      #0f2016 10%,
+      #0f2016 80%,
+      #0f2016 80%
+    );
+  }
+
+  @media (max-width: 600px) {
+    background: linear-gradient(
+      to bottom,
+      #fff 20%,
+      #0f2016 20%,
+      #0f2016 80%,
+      #0f2016 80%
+    );
+  }
 `;
 
 export const FooterMainContainer = styled.section`
   width: 100%;
   min-height: auto;
   background: linear-gradient(to bottom, #fff 50%, #0f2016 50%);
-  padding-left: 187px;
-  padding-right: 187px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding-top: 160px;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;
 
 export const FooterContentContainer = styled.div`
@@ -39,12 +81,35 @@ export const FooterContentContainer = styled.div`
   @media (min-width: 1650px) {
     max-width: 1200px;
   }
+
+  @media (max-width: 1180px) {
+    width: 100%;
+  }
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 69px;
+  }
 `;
 
 export const AppMiniPresentation = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 320px;
+
+  @media (max-width: 950px) {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 16px;
+  }
 `;
 
 export const FooterLogo = styled.div``;
@@ -57,6 +122,10 @@ export const FooterAppDescription = styled.p`
   font-weight: 400;
   line-height: 24px;
   margin-top: 32px;
+
+  @media (max-width: 950px) {
+    max-width: 350px;
+  }
 `;
 
 export const FooterMenu = styled.ul`
@@ -105,15 +174,26 @@ export const FooterRightsContentContainer = styled.div`
   background: #334139;
   width: 100%;
   display: flex;
-  padding: 48px 0px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 64px;
   align-self: stretch;
+  padding: 48px 0px;
   ${PADDINGS}
 
   ${CONTENT_MAX_WIDTH}
+
+  @media (max-width: 950px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 47px 59px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const FooterRightsContainerText = styled.p`
@@ -123,6 +203,10 @@ export const FooterRightsContainerText = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+
+  @media (max-width: 700px) {
+    max-width: 250px;
+  }
 
   a {
     color: var(--white, #fff);

@@ -10,7 +10,7 @@ export const DESKTOP_MAX_WIDTH = 1600;
 export const CONTAINER_DEFAULT_PROPS = `
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 `;
 
