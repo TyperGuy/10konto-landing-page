@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { HORIZONTAL_PADDING } from '~/constants/sizes';
+import { CONTENT_MAX_WIDTH, HORIZONTAL_PADDING } from '~/constants/sizes';
 
 export const HeroContainer = styled.section`
   width: 100%;
@@ -8,7 +8,9 @@ export const HeroContainer = styled.section`
   padding-bottom: 147px;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
-  background-color: #FCFFFD;
+  background-color: #fcfffd;
+
+  ${CONTENT_MAX_WIDTH}
 `;
 
 export const HeroContentContainer = styled.div`

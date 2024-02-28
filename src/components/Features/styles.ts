@@ -1,14 +1,25 @@
 import styled from 'styled-components';
-import { HORIZONTAL_PADDING, PADDINGS } from '~/constants/sizes';
-
-
+import {
+  CONTAINER_DEFAULT_PROPS,
+  CONTENT_MAX_WIDTH,
+  HORIZONTAL_PADDING,
+  PADDINGS,
+} from '~/constants/sizes';
 
 export const FeaturesContainer = styled.section`
   width: 100%;
   min-height: 700px;
   background: linear-gradient(to bottom, #0f2016 50%, #fff 50%);
-  ${PADDINGS}
+  ${CONTAINER_DEFAULT_PROPS}
   padding-top: 100px;
+`;
+
+export const FeaturesContentContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  ${CONTENT_MAX_WIDTH}
 `;
 
 export const FeaturesList = styled.ul`

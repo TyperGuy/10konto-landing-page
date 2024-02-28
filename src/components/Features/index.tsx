@@ -16,6 +16,7 @@ import {
   FeaturesItemIconContainer,
   FeaturesItemTitle,
   FeaturesList,
+  FeaturesContentContainer,
 } from './styles';
 
 import AppHome from '~/assets/home.svg';
@@ -70,41 +71,43 @@ const dataScreens = [
 export const Features = () => {
   return (
     <FeaturesContainer>
-      <FeaturesList>
-        {data.map((item) => (
-          <FeaturesItem key={item.title}>
-            <FeaturesItemIconContainer>{item.icon}</FeaturesItemIconContainer>
-            <div>
-              <FeaturesItemTitle>{item.title}</FeaturesItemTitle>
-              <FeaturesItemDescription>
-                {item.description}
-              </FeaturesItemDescription>
-            </div>
-          </FeaturesItem>
-        ))}
-      </FeaturesList>
-      <FeatureIlustrationList>
-        {dataScreens.map((item) => (
-          <FeatureIlustrationItem key={item.number}>
-            <div className='card-header'>
-              <FeatureIlustrationItemNumber>
-                {item.number}
-              </FeatureIlustrationItemNumber>
+      <FeaturesContentContainer>
+        <FeaturesList>
+          {data.map((item) => (
+            <FeaturesItem key={item.title}>
+              <FeaturesItemIconContainer>{item.icon}</FeaturesItemIconContainer>
               <div>
-                <FeatureIlustrationItemTitle>
-                  {item.title}
-                </FeatureIlustrationItemTitle>
-                <FeatureIlustrationItemDescription>
+                <FeaturesItemTitle>{item.title}</FeaturesItemTitle>
+                <FeaturesItemDescription>
                   {item.description}
-                </FeatureIlustrationItemDescription>
+                </FeaturesItemDescription>
               </div>
-            </div>
-            <FeatureIlustrationImage className={'image-' + item.number}>
-              {item.image}
-            </FeatureIlustrationImage>
-          </FeatureIlustrationItem>
-        ))}
-      </FeatureIlustrationList>
+            </FeaturesItem>
+          ))}
+        </FeaturesList>
+        <FeatureIlustrationList>
+          {dataScreens.map((item) => (
+            <FeatureIlustrationItem key={item.number}>
+              <div className='card-header'>
+                <FeatureIlustrationItemNumber>
+                  {item.number}
+                </FeatureIlustrationItemNumber>
+                <div>
+                  <FeatureIlustrationItemTitle>
+                    {item.title}
+                  </FeatureIlustrationItemTitle>
+                  <FeatureIlustrationItemDescription>
+                    {item.description}
+                  </FeatureIlustrationItemDescription>
+                </div>
+              </div>
+              <FeatureIlustrationImage className={'image-' + item.number}>
+                {item.image}
+              </FeatureIlustrationImage>
+            </FeatureIlustrationItem>
+          ))}
+        </FeatureIlustrationList>
+      </FeaturesContentContainer>
     </FeaturesContainer>
   );
 };

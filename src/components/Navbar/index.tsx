@@ -8,6 +8,7 @@ import {
   MenuContainer,
   MenuItem,
   ButtonLogin,
+  NavbarContentContainer,
 } from './styles';
 import { useState } from 'react';
 
@@ -39,26 +40,28 @@ export const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <div className='navbar-content'>
-        <Logo>
-          <KontoLogo />
-        </Logo>
+      <NavbarContentContainer>
+        <div className='navbar-content'>
+          <Logo>
+            <KontoLogo />
+          </Logo>
 
-        <MenuContainer>
-          {menu.map((item) => (
-            <Link key={item.title} href={item.link}>
-              <MenuItem
-                onClick={() => setActiveItem(item)}
-                active={activeItem.title === item.title}
-              >
-                {item.title}
-              </MenuItem>
-            </Link>
-          ))}
-        </MenuContainer>
-      </div>
+          <MenuContainer>
+            {menu.map((item) => (
+              <Link key={item.title} href={item.link}>
+                <MenuItem
+                  onClick={() => setActiveItem(item)}
+                  active={activeItem.title === item.title}
+                >
+                  {item.title}
+                </MenuItem>
+              </Link>
+            ))}
+          </MenuContainer>
+        </div>
 
-      <ButtonLogin>Criar conta</ButtonLogin>
+        <ButtonLogin>Criar conta</ButtonLogin>
+      </NavbarContentContainer>
     </NavbarContainer>
   );
 };

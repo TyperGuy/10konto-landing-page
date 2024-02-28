@@ -1,7 +1,20 @@
 import styled from 'styled-components';
-import { PADDINGS } from '~/constants/sizes';
+import { CONTAINER_DEFAULT_PROPS, CONTENT_MAX_WIDTH, PADDINGS } from '~/constants/sizes';
 
 export const FooterContainer = styled.section`
+  width: 100%;
+  min-height: auto;
+  background: linear-gradient(to bottom, #fff 50%, #0f2016 50%);
+  padding-left: 187px;
+  padding-right: 187px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 160px;
+`;
+
+export const FooterMainContainer = styled.section`
   width: 100%;
   min-height: auto;
   background: linear-gradient(to bottom, #fff 50%, #0f2016 50%);
@@ -22,12 +35,16 @@ export const FooterContentContainer = styled.div`
   margin-top: 82px;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (min-width: 1650px) {
+    max-width: 1200px;
+  }
 `;
 
 export const AppMiniPresentation = styled.div`
   display: flex;
   flex-direction: column;
-  max-width:320px;
+  max-width: 320px;
 `;
 
 export const FooterLogo = styled.div``;
@@ -81,6 +98,12 @@ export const FooterMenuItem = styled.li`
 export const FooterRightsContainer = styled.div`
   background: #334139;
   width: 100%;
+  ${CONTAINER_DEFAULT_PROPS}
+`;
+
+export const FooterRightsContentContainer = styled.div`
+  background: #334139;
+  width: 100%;
   display: flex;
   padding: 48px 0px;
   flex-direction: row;
@@ -89,9 +112,9 @@ export const FooterRightsContainer = styled.div`
   gap: 64px;
   align-self: stretch;
   ${PADDINGS}
+
+  ${CONTENT_MAX_WIDTH}
 `;
-
-
 
 export const FooterRightsContainerText = styled.p`
   color: var(--white, #fff);

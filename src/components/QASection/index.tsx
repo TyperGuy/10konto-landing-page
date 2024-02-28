@@ -15,6 +15,7 @@ import {
   QASectionList,
   QASectionTitle,
   QASectionContentContainer,
+  QASectionMainContentContainer,
 } from './styles';
 import { QAItem } from './qa-item';
 import ContactImage from '~/assets/contact.svg';
@@ -52,30 +53,32 @@ export const QASection = () => {
 
   return (
     <QASectionContainer>
-      <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
-      <QASectionContentContainer>
-        <QASectionList>
-          {data.map((item) => (
-            <QAItem {...item} key={item.id} />
-          ))}
-        </QASectionList>
-        <QASectionCard>
-          <QASectionCardDemoImage>
-            <ContactImage />
-          </QASectionCardDemoImage>
-          <div className='card-bottom-container'>
-            <QASectionCardButton>Falar com um agente</QASectionCardButton>
-            <QASectionContactsList>
-              {avatars.map((item, index) => (
-                <QASectionContactsListItem>
-                  <img src='/pic.svg' className='pic' alt='' />
-                  {lastAvatar === index && <div className='dot' />}
-                </QASectionContactsListItem>
-              ))}
-            </QASectionContactsList>
-          </div>
-        </QASectionCard>
-      </QASectionContentContainer>
+      <QASectionMainContentContainer>
+        <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
+        <QASectionContentContainer>
+          <QASectionList>
+            {data.map((item) => (
+              <QAItem {...item} key={item.id} />
+            ))}
+          </QASectionList>
+          <QASectionCard>
+            <QASectionCardDemoImage>
+              <ContactImage />
+            </QASectionCardDemoImage>
+            <div className='card-bottom-container'>
+              <QASectionCardButton>Falar com um agente</QASectionCardButton>
+              <QASectionContactsList>
+                {avatars.map((item, index) => (
+                  <QASectionContactsListItem>
+                    <img src='/pic.svg' className='pic' alt='' />
+                    {lastAvatar === index && <div className='dot' />}
+                  </QASectionContactsListItem>
+                ))}
+              </QASectionContactsList>
+            </div>
+          </QASectionCard>
+        </QASectionContentContainer>
+      </QASectionMainContentContainer>
     </QASectionContainer>
   );
 };

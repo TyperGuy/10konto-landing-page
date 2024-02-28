@@ -1,12 +1,19 @@
 import styled from 'styled-components';
-import { PADDINGS } from '~/constants/sizes';
+import { CONTAINER_DEFAULT_PROPS, CONTENT_MAX_WIDTH, PADDINGS } from '~/constants/sizes';
 
 export const ReviewsContainer = styled.section`
   margin-top: 150px;
   ${PADDINGS}
   width: 100%;
   margin-bottom: 100px;
+
+  ${CONTAINER_DEFAULT_PROPS}
 `;
+
+export const ReviewsContentContainer = styled.section`
+  ${CONTENT_MAX_WIDTH}
+`;
+
 
 export const ReviewsTitle = styled.h1`
   color: #003c2f;

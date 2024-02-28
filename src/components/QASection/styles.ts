@@ -1,10 +1,23 @@
 import styled from 'styled-components';
-import { HORIZONTAL_PADDING, PADDINGS } from '~/constants/sizes';
+import {
+  CONTAINER_DEFAULT_PROPS,
+  CONTENT_MAX_WIDTH,
+  HORIZONTAL_PADDING,
+  PADDINGS,
+} from '~/constants/sizes';
 
 export const QASectionContainer = styled.section`
   width: 100%;
   ${PADDINGS};
   margin-bottom: 50px;
+
+  ${CONTAINER_DEFAULT_PROPS}
+`;
+
+export const QASectionMainContentContainer = styled.section`
+  ${CONTENT_MAX_WIDTH}
+  display: flex;
+  flex-direction: column;
 `;
 
 export const QASectionContentContainer = styled.section`

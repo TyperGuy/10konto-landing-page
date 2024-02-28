@@ -12,6 +12,7 @@ import {
   FooterRightsNetworks,
   FooterRightsNetworksItem,
   AppMiniPresentation,
+  FooterRightsContentContainer,
 } from './styles';
 
 import Facebook from '~/assets/facebook.svg';
@@ -89,16 +90,19 @@ export const Footer = () => {
       </FooterContainer>
 
       <FooterRightsContainer>
-        <FooterRightsContainerText>
-          © 2024 <a href=''>Andromeda Labs</a> . Todos os direitos reservados.
-        </FooterRightsContainerText>
-        <FooterRightsNetworks>
-          {networks.map((item, index) => (
-            <FooterRightsNetworksItem key={index}>
-              <a href='#'>{item}</a>
-            </FooterRightsNetworksItem>
-          ))}
-        </FooterRightsNetworks>
+        <FooterRightsContentContainer>
+          <FooterRightsContainerText>
+            © 2024 <a href=''>Andromeda Labs</a> . Todos os direitos
+            reservados.
+          </FooterRightsContainerText>
+          <FooterRightsNetworks>
+            {networks.map((item, index) => (
+              <FooterRightsNetworksItem key={index}>
+                <a href='#'>{item}</a>
+              </FooterRightsNetworksItem>
+            ))}
+          </FooterRightsNetworks>
+        </FooterRightsContentContainer>
       </FooterRightsContainer>
     </>
   );

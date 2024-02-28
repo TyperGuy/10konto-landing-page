@@ -1,7 +1,16 @@
 import { styled } from 'styled-components';
-import { HORIZONTAL_PADDING } from '~/constants/sizes';
+import {
+  CONTAINER_DEFAULT_PROPS,
+  CONTENT_MAX_WIDTH,
+  DESKTOP_MAX_WIDTH,
+  HORIZONTAL_PADDING,
+} from '~/constants/sizes';
 
 export const NavbarContainer = styled.section`
+  ${CONTAINER_DEFAULT_PROPS}
+`;
+
+export const NavbarContentContainer = styled.section`
   width: 100%;
   height: auto;
   background-color: #fcfffd;
@@ -17,6 +26,8 @@ export const NavbarContainer = styled.section`
     flex-direction: row;
     align-items: center;
   }
+
+  ${CONTENT_MAX_WIDTH}
 `;
 
 export const Logo = styled.div`

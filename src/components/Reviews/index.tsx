@@ -10,6 +10,7 @@ import {
   ReviewsScrollControllerContainer,
   ReviewsScrollTrack,
   ReviewsTitle,
+  ReviewsContentContainer,
 } from './styles';
 import RightIcon from '~/assets/Right.svg';
 import LeftIcon from '~/assets/Left.svg';
@@ -159,7 +160,6 @@ export const Reviews = () => {
       },
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
     },
-
   ]);
 
   useEffect(() => {
@@ -205,28 +205,30 @@ export const Reviews = () => {
 
   return (
     <ReviewsContainer>
-      <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
-      <ReviewsList ref={reviewsList}>
-        {data.map((item) => (
-          <ReviewItem key={item.id} data={item} />
-        ))}
-      </ReviewsList>
-      {showScroll && (
-        <ReviewsScrollContainer>
-          <div className='line' />
-          <ReviewsScrollTrack scrollPosition={scrollPosition} />
-        </ReviewsScrollContainer>
-      )}
-      {showScroll && (
-        <ReviewsScrollControllerContainer>
-          <ReviewsScrollControllerButton onClick={handlePrev}>
-            <LeftIcon />
-          </ReviewsScrollControllerButton>
-          <ReviewsScrollControllerButton onClick={handleNext}>
-            <RightIcon />
-          </ReviewsScrollControllerButton>
-        </ReviewsScrollControllerContainer>
-      )}
+      <ReviewsContentContainer>
+        <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
+        <ReviewsList ref={reviewsList}>
+          {data.map((item) => (
+            <ReviewItem key={item.id} data={item} />
+          ))}
+        </ReviewsList>
+        {showScroll && (
+          <ReviewsScrollContainer>
+            <div className='line' />
+            <ReviewsScrollTrack scrollPosition={scrollPosition} />
+          </ReviewsScrollContainer>
+        )}
+        {showScroll && (
+          <ReviewsScrollControllerContainer>
+            <ReviewsScrollControllerButton onClick={handlePrev}>
+              <LeftIcon />
+            </ReviewsScrollControllerButton>
+            <ReviewsScrollControllerButton onClick={handleNext}>
+              <RightIcon />
+            </ReviewsScrollControllerButton>
+          </ReviewsScrollControllerContainer>
+        )}
+      </ReviewsContentContainer>
     </ReviewsContainer>
   );
 };
