@@ -188,7 +188,6 @@ export const Reviews = () => {
   };
 
   useEffect(() => {
-    console.log(reviewsList);
     if (reviewsList.current === null) return;
 
     const handleScroll = () => {
