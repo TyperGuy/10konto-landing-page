@@ -63,7 +63,7 @@ export const QASection = () => {
           </QASectionList>
           <QASectionCard>
             <QASectionCardDemoImage>
-              <ContactImage />
+              <img src='/contact.png' />
             </QASectionCardDemoImage>
             <div className='card-bottom-container'>
               <QASectionCardButton>Falar com um agente</QASectionCardButton>

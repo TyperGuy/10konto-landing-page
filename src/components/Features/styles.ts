@@ -8,8 +8,7 @@ import {
 
 export const FeaturesContainer = styled.section`
   width: 100%;
-  min-height: 700px;
-  background: linear-gradient(to bottom, #0f2016 50%, #fff 50%);
+  background: linear-gradient(to bottom, #0f2016 70%, #0f2016 70%, #fff 50%);
   ${CONTAINER_DEFAULT_PROPS}
   padding-top: 100px;
 `;
@@ -29,13 +28,34 @@ export const FeaturesList = styled.ul`
   justify-content: space-between;
   list-style: none;
   margin-bottom: 110px;
+
+  @media (max-width: 1210px) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  @media (max-width: 941px) {
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+
+  @media (max-width: 927px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
+
 export const FeaturesItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 22px;
   max-width: 390px;
+
+  @media (max-width: 927px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 export const FeaturesItemIconContainer = styled.div``;
 
@@ -61,7 +81,23 @@ export const FeatureIlustrationList = styled.ul`
   grid-template-columns: repeat(3, 32%);
   justify-content: space-between;
   list-style: none;
-  /* gap: 60px; */
+
+  @media (max-width: 1432px) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  @media (max-width: 1226px) {
+    grid-template-columns: 47% 47%;
+    gap: 48px;
+  }
+
+  //820
+  //react slider entra para actuar
+
+  @media (max-width: 820px) {
+    /* display: none; */
+  }
 `;
 
 export const FeatureIlustrationItem = styled.li`
@@ -76,6 +112,23 @@ export const FeatureIlustrationItem = styled.li`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
+
+  @media (max-width: 1226px) {
+    width: 100%;
+    height: 680px;
+  }
+
+  @media (max-width: 820px) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 100%;
+    min-height: 640px;
+  }
 
   .card-header {
     display: flex;
@@ -84,6 +137,11 @@ export const FeatureIlustrationItem = styled.li`
     gap: 22px;
     padding: 85px 43px;
     padding-bottom: 0;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      padding: 31px 51px;
+    }
   }
 
   .image-3 {
@@ -109,7 +167,6 @@ export const FeatureIlustrationItemNumber = styled.p`
   font-style: normal;
   font-weight: 900;
   line-height: 32px;
-
   display: flex;
   width: 37px;
   height: 37px;
@@ -120,7 +177,7 @@ export const FeatureIlustrationItemNumber = styled.p`
   gap: 10px;
   flex-shrink: 0;
   border-radius: 90px;
-  background: var(--Green, #73eea6);
+  background: #73eea6;
 `;
 
 export const FeatureIlustrationItemTitle = styled.h1`
@@ -131,6 +188,11 @@ export const FeatureIlustrationItemTitle = styled.h1`
   font-weight: 500;
   line-height: 32px;
   max-width: 300px;
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 export const FeatureIlustrationItemDescription = styled.p`
   color: #5b5c5e;
@@ -141,8 +203,55 @@ export const FeatureIlustrationItemDescription = styled.p`
   font-weight: 300;
   line-height: 32px;
   min-height: 100px;
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 export const FeatureIlustrationImage = styled.div`
   margin-top: 15px;
+`;
+
+export const FeatureIlustrationListMobile = styled.div`
+  width: 100%;
+  max-width: 100%;
+  padding-right: 41px;
+  padding-left: 41px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 820px) {
+  }
+`;
+
+export const SliderControlContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  width: 100%;
+`;
+
+export const SliderControlDots = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;
+
+interface SliderControlDotProps {
+  active: boolean;
+}
+
+export const SliderControlDot = styled.div<SliderControlDotProps>`
+  width: ${({ active }) => (active ? '24px' : '10px')};
+  height: 10px;
+  border-radius: 20px;
+  background-color: ${({ active }) => (active ? '#0F2016' : '#D9D9D9')};
+  transition: 0.5s;
 `;

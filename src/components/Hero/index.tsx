@@ -13,6 +13,8 @@ import {
 } from './styles';
 
 import MouseIcon from '~/assets/Up.svg';
+import MouseIcon2 from '~/assets/float-icon.svg';
+
 import AppDemoImage from '~/assets/app.svg'
 
 
@@ -35,11 +37,13 @@ export const Hero = () => {
               <MouseIcon /> Saber mais
             </HeroButton>
             <SecondayHeroButton>Baixar a APP</SecondayHeroButton>
+            <div className='mobile-mouse-icon'>
+              <MouseIcon2 />
+            </div>
           </HeroTextContainerButtons>
         </HeroTextContainer>
         <HeroImageContainer>
-          <img src="/app.png" alt="" />
-          {/* <AppDemoImage /> */}
+          <img src='/app.png' alt='' />
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>

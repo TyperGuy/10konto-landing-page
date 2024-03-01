@@ -1,11 +1,7 @@
-import type { Metadata } from 'next';
+'use client';
+
 import './globals.css';
 import StyledComponentsRegistry from '~/lib/registry';
-
-export const metadata: Metadata = {
-  title: '10konto',
-  description: '',
-};
 
 export default function RootLayout({
   children,

@@ -2,7 +2,6 @@
 import Cart1Icon from '~/assets/Cart.svg';
 import OrcamentoIcon from '~/assets/orcamento.svg';
 import Cart2Icon from '~/assets/cesta.svg';
-
 import {
   FeaturesContainer,
   FeatureIlustrationImage,
@@ -17,11 +16,21 @@ import {
   FeaturesItemTitle,
   FeaturesList,
   FeaturesContentContainer,
+  FeatureIlustrationListMobile,
+  SliderControlContainer,
+  SliderControlDots,
+  SliderControlDot,
 } from './styles';
+
+import React from 'react';
 
 import AppHome from '~/assets/home.svg';
 import AppSearch from '~/assets/search.svg';
 import AppProduct from '~/assets/product.svg';
+import { useEffect, useRef, useState } from 'react';
+import { useWindowSize } from '~/hooks/useMediaQuery';
+import { SliderControlButtons } from '../Reviews/utils';
+import CustomSlider from './slider';
 
 const data = [
   {
@@ -68,7 +77,45 @@ const dataScreens = [
   },
 ];
 
+const slides = [
+  <div style={{ backgroundColor: 'red', height: '200px' }}>Slide 1</div>,
+  <div style={{ backgroundColor: 'blue', height: '200px' }}>Slide 2</div>,
+  <div style={{ backgroundColor: 'green', height: '200px' }}>Slide 3</div>,
+];
+
 export const Features = () => {
+
+  const { width: screenWidth } = useWindowSize();
+  const isMobile = screenWidth <= 830;
+  
+
+  let dotItems = [];
+  const numberOfStart = dataScreens.length;
+  for (let x = 0; x < numberOfStart; x++) {
+    dotItems.push(x);
+  }
+
+  const cardsItem = dataScreens.map((item) => (
+    <FeatureIlustrationItem key={item.number}>
+      <div className='card-header'>
+        <FeatureIlustrationItemNumber>
+          {item.number}
+        </FeatureIlustrationItemNumber>
+        <div>
+          <FeatureIlustrationItemTitle>
+            {item.title}
+          </FeatureIlustrationItemTitle>
+          <FeatureIlustrationItemDescription>
+            {item.description}
+          </FeatureIlustrationItemDescription>
+        </div>
+      </div>
+      <FeatureIlustrationImage className={'image-' + item.number}>
+        {item.image}
+      </FeatureIlustrationImage>
+    </FeatureIlustrationItem>
+  ));
+
   return (
     <FeaturesContainer>
       <FeaturesContentContainer>
@@ -85,28 +132,16 @@ export const Features = () => {
             </FeaturesItem>
           ))}
         </FeaturesList>
-        <FeatureIlustrationList>
-          {dataScreens.map((item) => (
-            <FeatureIlustrationItem key={item.number}>
-              <div className='card-header'>
-                <FeatureIlustrationItemNumber>
-                  {item.number}
-                </FeatureIlustrationItemNumber>
-                <div>
-                  <FeatureIlustrationItemTitle>
-                    {item.title}
-                  </FeatureIlustrationItemTitle>
-                  <FeatureIlustrationItemDescription>
-                    {item.description}
-                  </FeatureIlustrationItemDescription>
-                </div>
-              </div>
-              <FeatureIlustrationImage className={'image-' + item.number}>
-                {item.image}
-              </FeatureIlustrationImage>
-            </FeatureIlustrationItem>
-          ))}
-        </FeatureIlustrationList>
+
+        {!isMobile && (
+          <FeatureIlustrationList>{cardsItem}</FeatureIlustrationList>
+        )}
+
+        {isMobile && (
+          <>
+            <CustomSlider slides={cardsItem} />
+          </>
+        )}
       </FeaturesContentContainer>
     </FeaturesContainer>
   );

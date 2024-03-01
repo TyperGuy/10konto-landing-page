@@ -12,9 +12,20 @@ export const QASectionContainer = styled.section`
   margin-bottom: 50px;
 
   ${CONTAINER_DEFAULT_PROPS}
+
+  @media (max-width: 1150px) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  @media (max-width: 950px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 export const QASectionMainContentContainer = styled.section`
+  width: 100%;
   ${CONTENT_MAX_WIDTH}
   display: flex;
   flex-direction: column;
@@ -26,6 +37,10 @@ export const QASectionContentContainer = styled.section`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;
 
 export const QASectionTitle = styled.h1`
@@ -36,6 +51,13 @@ export const QASectionTitle = styled.h1`
   font-weight: 600;
   line-height: 90px;
   margin-bottom: 70px;
+
+  @media (max-width: 950px) {
+    padding-left: 41px;
+    padding-right: 41px;
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const QASectionList = styled.ul`
@@ -43,6 +65,11 @@ export const QASectionList = styled.ul`
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+
+  @media (max-width: 950px) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
 `;
 
 export const QASectionItem = styled.li`
@@ -54,6 +81,23 @@ export const QASectionItem = styled.li`
   padding-bottom: 24px;
   border-bottom: 1px solid var(--Gray-700, #e7e9e8);
   max-width: 638px;
+
+  @media (max-width: 1506px) {
+    max-width: 550px;
+  }
+
+  @media (max-width: 1287px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 1150px) {
+    width: 350px;
+  }
+
+  @media (max-width: 950px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 export const QASectionItemButton = styled.div`
@@ -68,6 +112,10 @@ export const QASectionItemTitle = styled.h1`
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.44px;
+
+  @media (max-width: 1150px) {
+    font-size: 20px;
+  }
 `;
 
 export const QASectionItemDescription = styled.p`
@@ -79,6 +127,10 @@ export const QASectionItemDescription = styled.p`
   line-height: 24px;
   letter-spacing: -0.4px;
   transition: 0.5s;
+
+  @media (max-width: 1150px) {
+    font-size: 22px;
+  }
 
   a {
     color: var(--Blue-dark, #1c65e8);
@@ -100,6 +152,16 @@ export const QASectionCard = styled.div`
   border-radius: 24px;
   overflow: hidden;
 
+  @media (max-width: 1394px) {
+    width: 500px;
+  }
+
+  @media (max-width: 950px) {
+    margin-top: 96px;
+    width: 100%;
+    border-radius: 0px;
+  }
+
   .card-bottom-container {
     width: 100%;
     display: flex;
@@ -116,6 +178,17 @@ export const QASectionCard = styled.div`
     border-right: 2px solid var(--Gray-700, #e7e9e8);
     border-bottom: 2px solid var(--Gray-700, #e7e9e8);
     border-left: 2px solid var(--Gray-700, #e7e9e8);
+
+    @media (max-width: 950px) {
+      border-radius: 0px;
+      border: none;
+    }
+
+    @media (max-width: 496px) {
+      flex-direction: column-reverse;
+      gap: 32px;
+      margin-top: 32px;
+    }
   }
 `;
 
@@ -124,6 +197,25 @@ export const QASectionCardDemoImage = styled.div`
   border-top: 1px solid var(--Green-light, #e6f1ed);
   border-right: 1px solid var(--Green-light, #e6f1ed);
   border-left: 1px solid var(--Green-light, #e6f1ed);
+  width: 100%;
+
+  img  {
+    width: 100%;
+  }
+
+  @media (max-width: 1394px) {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 950px) {
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+  }
 `;
 
 export const QASectionCardButton = styled.button`
@@ -146,6 +238,9 @@ export const QASectionCardButton = styled.button`
   font-weight: 400;
   line-height: 24px; /* 109.091% */
   letter-spacing: -0.44px;
+
+  @media (max-width: 950px) {
+  }
 `;
 
 export const QASectionContactsList = styled.ul`

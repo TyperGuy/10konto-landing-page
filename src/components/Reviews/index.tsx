@@ -15,10 +15,18 @@ import {
 import RightIcon from '~/assets/Right.svg';
 import LeftIcon from '~/assets/Left.svg';
 import AppStore from '~/assets/appstore.svg';
+import { SliderControlButtons } from './utils';
+import { useWindowSize } from '~/hooks/useMediaQuery';
+import CustomSlider from '../Features/slider';
 
 export const Reviews = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const reviewsList = useRef<HTMLUListElement | null>(null);
+  const { width } = useWindowSize();
+
+  const isMobile = width <= 906;
+
+  const isWideScreen = width >= 1650;
   const [data, setData] = useState<Review[]>([
     {
       id: 1,
@@ -162,7 +170,25 @@ export const Reviews = () => {
     },
   ]);
 
+  const scrollBarD = () => {
+    if (width <= 1100) {
+      return 71;
+    }
+    if (width <= 1228) {
+      return 80;
+    }
+    if (width <= 1418) {
+      return 80;
+    }
+    if (isWideScreen) {
+      return 100;
+    } else {
+      return 82.5;
+    }
+  };
+
   useEffect(() => {
+    console.log(reviewsList);
     if (reviewsList.current === null) return;
 
     const handleScroll = () => {
@@ -171,8 +197,8 @@ export const Reviews = () => {
       const currentPosition = reviewsList.current.scrollLeft;
       const maxScroll =
         reviewsList.current.scrollWidth - reviewsList.current.clientWidth;
-      const indicatorPosition = (currentPosition / maxScroll) * 85;
-      console.log('indicatorPosition ===> ', indicatorPosition);
+
+      const indicatorPosition = (currentPosition / maxScroll) * 82.5;
       setScrollPosition(indicatorPosition);
     };
 
@@ -180,7 +206,6 @@ export const Reviews = () => {
 
     return () => {
       if (reviewsList.current === null) return;
-
       reviewsList.current.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -203,30 +228,29 @@ export const Reviews = () => {
 
   const showScroll = data.length > 3;
 
+  const listItemsReview = data.map((item) => (
+    <ReviewItem key={item.id} data={item} />
+  ));
+
   return (
     <ReviewsContainer>
       <ReviewsContentContainer>
         <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
-        <ReviewsList ref={reviewsList}>
-          {data.map((item) => (
-            <ReviewItem key={item.id} data={item} />
-          ))}
-        </ReviewsList>
-        {showScroll && (
+
+        <ReviewsList ref={reviewsList}>{listItemsReview}</ReviewsList>
+
+        {isMobile && <CustomSlider slides={listItemsReview} />}
+        {showScroll && !isMobile && (
           <ReviewsScrollContainer>
             <div className='line' />
             <ReviewsScrollTrack scrollPosition={scrollPosition} />
           </ReviewsScrollContainer>
         )}
-        {showScroll && (
-          <ReviewsScrollControllerContainer>
-            <ReviewsScrollControllerButton onClick={handlePrev}>
-              <LeftIcon />
-            </ReviewsScrollControllerButton>
-            <ReviewsScrollControllerButton onClick={handleNext}>
-              <RightIcon />
-            </ReviewsScrollControllerButton>
-          </ReviewsScrollControllerContainer>
+        {showScroll && !isMobile && (
+          <SliderControlButtons
+            handleNext={handleNext}
+            handlePrev={handlePrev}
+          />
         )}
       </ReviewsContentContainer>
     </ReviewsContainer>

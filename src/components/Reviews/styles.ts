@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { CONTAINER_DEFAULT_PROPS, CONTENT_MAX_WIDTH, PADDINGS } from '~/constants/sizes';
+import {
+  CONTAINER_DEFAULT_PROPS,
+  CONTENT_MAX_WIDTH,
+  PADDINGS,
+} from '~/constants/sizes';
 
 export const ReviewsContainer = styled.section`
   margin-top: 150px;
@@ -8,12 +12,17 @@ export const ReviewsContainer = styled.section`
   margin-bottom: 100px;
 
   ${CONTAINER_DEFAULT_PROPS}
+
+  @media (max-width: 906px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 `;
 
-export const ReviewsContentContainer = styled.section`
+export const ReviewsContentContainer = styled.div`
+  width: 100%;
   ${CONTENT_MAX_WIDTH}
 `;
-
 
 export const ReviewsTitle = styled.h1`
   color: #003c2f;
@@ -23,6 +32,16 @@ export const ReviewsTitle = styled.h1`
   font-weight: 600;
   line-height: 90px;
   letter-spacing: -1.44px;
+
+  @media (max-width: 906px) {
+    font-size: 48px;
+    padding-right: 41px;
+    padding-left: 41px;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    letter-spacing: -0.96px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const ReviewsList = styled.ul`
@@ -31,6 +50,10 @@ export const ReviewsList = styled.ul`
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 906px) {
+    display: none;
+  }
 
   &::-webkit-scrollbar {
     width: 0;
@@ -69,6 +92,10 @@ export const ReviewsItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 906px) {
+    width: 100%;
+  }
 `;
 
 export const ReviewsItemHeader = styled.div`
@@ -162,15 +189,24 @@ export const ReviewsScrollContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 62px;
 
   .line {
-    width: 100%;
+    width: 97%;
     flex-shrink: 0;
     height: 6px;
     background-color: #e6f1ed;
 
     border-radius: 10px;
     position: absolute;
+
+    @media (min-width: 1650px) {
+      width: 95%;
+    }
+
+    @media (max-width: 1259px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -190,10 +226,9 @@ export const ReviewsScrollTrack = styled.div<RSTProps>`
 `;
 
 export const ReviewsScrollControllerContainer = styled.div`
-  margin-top: 62px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 16px;
 `;
 
 export const ReviewsScrollControllerButton = styled.button`
