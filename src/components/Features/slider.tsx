@@ -7,6 +7,8 @@ import {
   SliderControlDots,
 } from './styles';
 import { SliderControlButtons } from '../Reviews/utils';
+import AppStore from '~/assets/appstore.svg';
+import GooglePlay from '~/assets/google-play.svg';
 
 const CustomSlider = ({ slides }: { slides: any[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,7 +36,7 @@ const CustomSlider = ({ slides }: { slides: any[] }) => {
     >
       <motion.div
         key={currentSlide}
-        style={{width: "100%"}}
+        style={{ width: '100%' }}
         initial={
           direction === 'next'
             ? { opacity: 0, x: '100%' }

@@ -1,5 +1,4 @@
 import {
-  ReviewsContainer,
   ReviewsItem,
   ReviewsItemHeader,
   ReviewsItemHeaderName,
@@ -7,11 +6,6 @@ import {
   ReviewsItemHeaderPic,
   ReviewsItemStart,
   ReviewsItemStartsList,
-  ReviewsList,
-  ReviewsScrollContainer,
-  ReviewsScrollControllerButton,
-  ReviewsScrollControllerContainer,
-  ReviewsScrollTrack,
   ReviewsSourceIcon,
   ReviewsSourceName,
   ReviewsText,
@@ -21,6 +15,12 @@ import {
 
 import Start from '~/assets/Star 1.svg';
 import AppStore from '~/assets/appstore.svg';
+import GooglePlay from './../../assets/google-play.svg';
+
+const icones = {
+  'app-store': <AppStore />,
+  'google-play': <GooglePlay />,
+};
 
 interface Author {
   pic: string;
@@ -34,7 +34,7 @@ export interface Review {
   text: string;
   source: {
     name: string;
-    icone: any;
+    icone: keyof typeof icones;
   };
   stars: number;
 }
@@ -74,7 +74,9 @@ export const ReviewItem = ({ data }: ReviewItemProps) => {
         `}
       </ReviewsText>
       <ReviewsSourceContainer>
-        <ReviewsSourceIcon>{data.source.icone}</ReviewsSourceIcon>
+        <ReviewsSourceIcon>
+          <img src={data.source.icone} alt="" />
+        </ReviewsSourceIcon>
         <div className='source-content'>
           <p className='legend'>Avaliado via</p>
           <ReviewsSourceName>{data.source.name}</ReviewsSourceName>

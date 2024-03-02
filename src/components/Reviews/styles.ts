@@ -38,7 +38,7 @@ export const ReviewsTitle = styled.h1`
     padding-right: 41px;
     padding-left: 41px;
     font-weight: 700;
-    line-height: 60px; /* 125% */
+    line-height: 60px; 
     letter-spacing: -0.96px;
     margin-bottom: 32px;
   }
@@ -172,7 +172,9 @@ export const ReviewsSourceContainer = styled.div`
   }
 `;
 
-export const ReviewsSourceIcon = styled.div``;
+export const ReviewsSourceIcon = styled.div`
+ 
+`;
 
 export const ReviewsSourceName = styled.h5`
   color: #1c65e8;
