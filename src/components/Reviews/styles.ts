@@ -192,6 +192,7 @@ export const ReviewsScrollContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 62px;
+  height: 10px;
 
   .line {
     width: 97%;
@@ -231,6 +232,7 @@ export const ReviewsScrollControllerContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
+  margin-top: 20px;
 `;
 
 export const ReviewsScrollControllerButton = styled.button`
