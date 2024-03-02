@@ -69,8 +69,8 @@ export const QASection = () => {
               <QASectionCardButton>Falar com um agente</QASectionCardButton>
               <QASectionContactsList>
                 {avatars.map((item, index) => (
-                  <QASectionContactsListItem>
-                    <img src='/pic.svg' className='pic' alt='' />
+                  <QASectionContactsListItem key={item}>
+                    <img src='/pic.png' className='pic' alt='' />
                     {lastAvatar === index && <div className='dot' />}
                   </QASectionContactsListItem>
                 ))}

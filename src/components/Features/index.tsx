@@ -77,11 +77,6 @@ const dataScreens = [
   },
 ];
 
-const slides = [
-  <div style={{ backgroundColor: 'red', height: '200px' }}>Slide 1</div>,
-  <div style={{ backgroundColor: 'blue', height: '200px' }}>Slide 2</div>,
-  <div style={{ backgroundColor: 'green', height: '200px' }}>Slide 3</div>,
-];
 
 export const Features = () => {
 
@@ -134,6 +129,7 @@ export const Features = () => {
         </FeaturesList>
 
         {!isMobile && (
+          
           <FeatureIlustrationList>{cardsItem}</FeatureIlustrationList>
         )}
 

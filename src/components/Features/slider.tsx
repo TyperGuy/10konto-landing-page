@@ -61,8 +61,11 @@ const CustomSlider = ({ slides }: { slides: any[] }) => {
       <>
         <SliderControlContainer>
           <SliderControlDots>
-            {dotItems.map((item) => (
-              <SliderControlDot active={item === currentSlide} />
+            {dotItems.map((item, index) => (
+              <SliderControlDot
+                key={item + index+"index"}
+                active={item === currentSlide}
+              />
             ))}
           </SliderControlDots>
           <SliderControlButtons

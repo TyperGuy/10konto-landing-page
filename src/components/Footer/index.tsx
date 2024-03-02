@@ -23,26 +23,26 @@ import Logo from '~/assets/logo2.svg';
 import { BannerDownload } from '../BannerDownload';
 
 export const Footer = () => {
-  const networks = [<Facebook />, <Twitter />, <Instagram />];
+  const networks = [<Facebook key={0} />, <Twitter  key={2}/>, <Instagram key={3} />];
 
   const menu1 = [
-    { title: 'Producto' },
-    { title: 'Como funciona' },
+    { title: 'Producto', status: '' },
+    { title: 'Como funciona', status: '' },
     { title: 'Funcionalidades', status: 'New' },
-    { title: 'Ajudas' },
+    { title: 'Ajudas', status: '' },
   ];
 
   const menu2 = [
-    { title: 'Empresa' },
-    { title: 'Sobre nós' },
-    { title: 'Carreiras' },
+    { title: 'Empresa', status: '' },
+    { title: 'Sobre nós', status: '' },
+    { title: 'Carreiras', status: '' },
   ];
 
   const menu3 = [
-    { title: 'Recursos' },
-    { title: 'Blog' },
-    { title: 'Newsletter' },
-    { title: 'Eventos' },
+    { title: 'Recursos', status: '' },
+    { title: 'Blog', status: '' },
+    { title: 'Newsletter', status: '' },
+    { title: 'Eventos', status: '' },
   ];
 
   return (
@@ -97,7 +97,7 @@ export const Footer = () => {
           </FooterRightsContainerText>
           <FooterRightsNetworks>
             {networks.map((item, index) => (
-              <FooterRightsNetworksItem key={index}>
+              <FooterRightsNetworksItem key={index+"icone"}>
                 <a href='#'>{item}</a>
               </FooterRightsNetworksItem>
             ))}

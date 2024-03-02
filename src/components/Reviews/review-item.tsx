@@ -34,7 +34,7 @@ export interface Review {
   text: string;
   source: {
     name: string;
-    icone: keyof typeof icones;
+    icone: string;
   };
   stars: number;
 }
