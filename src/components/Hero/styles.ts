@@ -13,8 +13,8 @@ export const HeroContainer = styled.section`
   ${CONTENT_MAX_WIDTH}
 
   @media (max-width: 767px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
     width: 100%;
     padding-bottom: 51px;
     padding-top: 41px;
@@ -34,6 +34,10 @@ export const HeroTextContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   margin-right: 100px;
+
+  @media (max-width: 1080px) {
+   margin-right: 0;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -134,6 +138,7 @@ export const HeroButton = styled.button`
 
   @media (max-width: 605px) {
     max-width: 100%;
+    min-width: 100%;
     width: 100%;
     height: 56px;
     padding: 10px 16px 10px 8px;

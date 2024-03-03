@@ -52,7 +52,7 @@ export const QASection = () => {
   const lastAvatar = avatars.length - 1;
 
   return (
-    <QASectionContainer>
+    <QASectionContainer id='faqs'>
       <QASectionMainContentContainer>
         <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
         <QASectionContentContainer>

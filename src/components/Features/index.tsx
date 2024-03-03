@@ -77,12 +77,9 @@ const dataScreens = [
   },
 ];
 
-
 export const Features = () => {
-
   const { width: screenWidth } = useWindowSize();
   const isMobile = screenWidth <= 830;
-  
 
   let dotItems = [];
   const numberOfStart = dataScreens.length;
@@ -114,7 +111,7 @@ export const Features = () => {
   return (
     <FeaturesContainer>
       <FeaturesContentContainer>
-        <FeaturesList>
+        <FeaturesList id='beneficios'>
           {data.map((item) => (
             <FeaturesItem key={item.title}>
               <FeaturesItemIconContainer>{item.icon}</FeaturesItemIconContainer>
@@ -129,13 +126,14 @@ export const Features = () => {
         </FeaturesList>
 
         {!isMobile && (
-          
-          <FeatureIlustrationList>{cardsItem}</FeatureIlustrationList>
+          <FeatureIlustrationList id='funcionamento'>
+            {cardsItem}
+          </FeatureIlustrationList>
         )}
 
         {isMobile && (
           <>
-            <CustomSlider slides={cardsItem} />
+            <CustomSlider id={'funcionamento'} slides={cardsItem} />
           </>
         )}
       </FeaturesContentContainer>

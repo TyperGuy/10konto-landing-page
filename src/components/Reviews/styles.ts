@@ -35,10 +35,10 @@ export const ReviewsTitle = styled.h1`
 
   @media (max-width: 906px) {
     font-size: 48px;
-    padding-right: 41px;
-    padding-left: 41px;
+    padding-right: 34px;
+    padding-left: 34px;
     font-weight: 700;
-    line-height: 60px; 
+    line-height: 60px;
     letter-spacing: -0.96px;
     margin-bottom: 32px;
   }
@@ -232,7 +232,6 @@ export const ReviewsScrollControllerContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-top: 20px;
 `;
 
 export const ReviewsScrollControllerButton = styled.button`

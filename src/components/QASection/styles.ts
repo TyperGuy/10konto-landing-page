@@ -14,8 +14,8 @@ export const QASectionContainer = styled.section`
   ${CONTAINER_DEFAULT_PROPS}
 
   @media (max-width: 1150px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media (max-width: 950px) {
@@ -53,8 +53,8 @@ export const QASectionTitle = styled.h1`
   margin-bottom: 70px;
 
   @media (max-width: 950px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
     font-size: 48px;
     margin-bottom: 32px;
   }
@@ -67,8 +67,8 @@ export const QASectionList = styled.ul`
   margin-top: 10px;
 
   @media (max-width: 950px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 `;
 

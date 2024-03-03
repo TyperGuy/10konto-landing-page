@@ -83,20 +83,13 @@ export const FeatureIlustrationList = styled.ul`
   list-style: none;
 
   @media (max-width: 1432px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media (max-width: 1226px) {
     grid-template-columns: 47% 47%;
     gap: 48px;
-  }
-
-  //820
-  //react slider entra para actuar
-
-  @media (max-width: 820px) {
-    /* display: none; */
   }
 `;
 
@@ -236,6 +229,9 @@ export const SliderControlContainer = styled.div`
   justify-content: space-between;
   margin-top: 32px;
   width: 100%;
+  flex-wrap: wrap;
+
+ 
 `;
 
 export const SliderControlDots = styled.div`

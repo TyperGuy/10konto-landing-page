@@ -208,7 +208,7 @@ export const Reviews = () => {
   ));
 
   return (
-    <ReviewsContainer>
+    <ReviewsContainer id="opinioes">
       <ReviewsContentContainer>
         <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
 

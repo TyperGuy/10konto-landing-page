@@ -30,8 +30,8 @@ export const NavbarContentContainer = styled.section`
   ${CONTENT_MAX_WIDTH}
 
   @media (max-width: 1340px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 34px;
+    padding-right: 34px;
     padding-top: 29px;
   }
 
@@ -86,6 +86,13 @@ export const MenuItem = styled.li<IMenuItem>`
   font-style: normal;
   font-weight: ${({ active }) => (active ? '700' : '400')};
   line-height: 30px;
+  transition:.5s;
+
+  &:hover {
+    
+    /* font-weight: 700; */
+    opacity: .5;
+  }
 `;
 
 export const ButtonLogin = styled.button`

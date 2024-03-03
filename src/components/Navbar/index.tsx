@@ -47,6 +47,10 @@ export const Navbar = () => {
   const [activeItem, setActiveItem] = useState(menu[0]);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMobileOpen(false);
+  };
+
   useEffect(() => {
     const layoutContent = document.getElementById('layout-body');
 
@@ -103,7 +107,10 @@ export const Navbar = () => {
           {menu.map((item) => (
             <Link key={item.title} href={item.link}>
               <MenuItem
-                onClick={() => setActiveItem(item)}
+                onClick={() => {
+                  closeMenu();
+                  setActiveItem(item);
+                }}
                 active={activeItem.title === item.title}
               >
                 {item.title}
