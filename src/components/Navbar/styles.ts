@@ -193,6 +193,8 @@ export const MenuMobileContainer = styled.div<MMProps>`
   transition: all.5s;
   z-index:8;
   padding-right: 41px;
+  overflow-y: auto;
+  padding-bottom: 20px;
 `;
 
 export const MenuMobile = styled.ul`
