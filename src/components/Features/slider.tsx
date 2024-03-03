@@ -34,9 +34,11 @@ const CustomSlider = ({ slides, id }: { slides: any[]; id?: string }) => {
       if (diffX > 50) {
         // Swipe right to left
         console.log('Swipe left');
+        handlePrev();
       } else if (diffX < -50) {
         // Swipe left to right
         console.log('Swipe right');
+        handleNext();
       }
     }
     setStartX(null);
@@ -62,21 +64,28 @@ const CustomSlider = ({ slides, id }: { slides: any[]; id?: string }) => {
   useEffect(() => {
     if (sliderItemRef.current === null) return;
 
-    sliderItemRef.current.addEventListener('touchstart', (e) => {
+    sliderItemRef.current.addEventListener(
+      'touchstart',
+      (e) => {
+        e.preventDefault();
+        console.log('touchstart');
+        setStartX(e.touches[0].clientX);
+      },
+      { passive: false },
+    );
+
+    sliderItemRef.current.addEventListener('touchend', (e) => {
       e.preventDefault();
-      console.log('touchstart');
-      setStartX(e.touches[0].clientX);
-    }, {passive: false});
+      console.log('touchend');
 
-    // sliderItemRef.current.addEventListener('touchend', (e) => {
-    //   e.preventDefault();
-    //   handleTouchEnd();
-    // });
+      handleTouchEnd();
+    });
 
-    // sliderItemRef.current.addEventListener('touchmove', (e) => {
-    //   e.preventDefault();
-    //   setEndX(e.touches[0].clientX);
-    // });
+    sliderItemRef.current.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      console.log('touchmove');
+      setEndX(e.touches[0].clientX);
+    });
   }, []);
 
   return (
