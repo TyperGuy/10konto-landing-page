@@ -133,7 +133,7 @@ export const FeatureIlustrationItem = styled.li`
 
     @media (max-width: 600px) {
       flex-direction: column;
-      padding: 31px 51px;
+      padding: 31px 37px;
     }
   }
 
