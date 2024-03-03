@@ -116,7 +116,7 @@ const CustomSlider = ({ slides, id }: { slides: any[]; id?: string }) => {
       >
         <div
           ref={sliderItemRef}
-          style={{ width: '100%', cursor: 'pointer', backgroundColor: 'red' }}
+          style={{ width: '100%', cursor: 'pointer' }}
         >
           {slides[currentSlide]}
         </div>
