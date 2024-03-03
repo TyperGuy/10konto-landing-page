@@ -210,8 +210,8 @@ export const FeatureIlustrationImage = styled.div`
 export const FeatureIlustrationListMobile = styled.div`
   width: 100%;
   max-width: 100%;
-  padding-right: 41px;
-  padding-left: 41px;
+  padding-right: 34px;
+  padding-left: 34px;
   position: relative;
   display: flex;
   flex-direction: column;
