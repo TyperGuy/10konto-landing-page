@@ -16,10 +16,6 @@ import {
   FeaturesItemTitle,
   FeaturesList,
   FeaturesContentContainer,
-  FeatureIlustrationListMobile,
-  SliderControlContainer,
-  SliderControlDots,
-  SliderControlDot,
 } from './styles';
 
 import React from 'react';
@@ -124,13 +120,11 @@ export const Features = () => {
             </FeaturesItem>
           ))}
         </FeaturesList>
-
         {!isMobile && (
           <FeatureIlustrationList id='funcionamento'>
             {cardsItem}
           </FeatureIlustrationList>
         )}
-
         {isMobile && (
           <>
             <CustomSlider id={'funcionamento'} slides={cardsItem} />

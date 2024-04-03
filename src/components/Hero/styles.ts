@@ -4,12 +4,11 @@ import { CONTENT_MAX_WIDTH, HORIZONTAL_PADDING } from '~/constants/sizes';
 export const HeroContainer = styled.section`
   width: 100%;
   height: auto;
-  padding-top: 87px;
-  padding-bottom: 147px;
+  padding:  70px 0;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
   background-color: #fcfffd;
-
+  margin-top: 80px;
   ${CONTENT_MAX_WIDTH}
 
   @media (max-width: 767px) {
@@ -33,7 +32,7 @@ export const HeroTextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 100px;
+  gap: 12px;
 
   @media (max-width: 1080px) {
    margin-right: 0;
@@ -41,20 +40,17 @@ export const HeroTextContainer = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  margin-bottom: 24px;
   font-family: 'Public Sans';
-  font-size: 72px;
-  font-style: normal;
+  font-size: 3.5em;
   font-weight: 600;
-  line-height: 90px;
-  letter-spacing: -1.44px;
+  line-height: 72px;
   color: #003c2f;
   max-width: 707px;
 
   mark {
     background-color: transparent;
-    font-weight: 700;
-    color: #29ba66;
+    font-weight: 900;
+    color: #003c2f;
   }
 
   @media (max-width: 1102px) {
@@ -70,12 +66,10 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
-  margin-bottom: 74px;
-  color: var(--Gray-300, #57635c);
+
   font-family: 'Public Sans';
-  font-size: 24px;
+  font-size: 1.25em;
   font-style: normal;
-  font-weight: 300;
   line-height: 32px;
   max-width: 661px;
 
@@ -89,7 +83,7 @@ export const HeroTextContainerButtons = styled.div`
   display: flex;
   flex-direction: row;
   gap: 27px;
-
+ margin-top: 16px;
   @media (max-width: 605px) {
     flex-direction: column;
     width: 100%;
@@ -99,7 +93,6 @@ export const HeroTextContainerButtons = styled.div`
     display: none;
 
     @media (max-width: 605px) {
-      margin-top: 71px;
       display: flex;
       width: 100%;
       display: flex;
@@ -115,7 +108,7 @@ export const HeroButton = styled.button`
   display: flex;
   width: 190px;
   height: 56px;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -157,7 +150,7 @@ export const HeroImageContainer = styled.div`
   width: 100%;
 
   img {
-    width: 500px;
+    width: 450px;
     height: auto;
   }
 

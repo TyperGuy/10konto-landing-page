@@ -18,6 +18,7 @@ export const FeaturesContentContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
   ${CONTENT_MAX_WIDTH}
 `;
 
@@ -62,15 +63,15 @@ export const FeaturesItemIconContainer = styled.div``;
 export const FeaturesItemTitle = styled.h1`
   color: #fff;
   font-family: 'Public Sans';
-  font-size: 24px;
+  font-size: 1.3em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 32px;
 `;
 export const FeaturesItemDescription = styled.p`
   color: #fff;
   font-family: 'Public Sans';
-  font-size: 18px;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -156,13 +157,13 @@ export const FeatureIlustrationItem = styled.li`
 export const FeatureIlustrationItemNumber = styled.p`
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Public Sans';
-  font-size: 19px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 900;
   line-height: 32px;
   display: flex;
-  width: 37px;
-  height: 37px;
+  width: 30px;
+  height: 30px;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
@@ -176,9 +177,8 @@ export const FeatureIlustrationItemNumber = styled.p`
 export const FeatureIlustrationItemTitle = styled.h1`
   color: #000;
   font-family: 'Public Sans';
-  font-size: 26px;
+  font-size: 1.3em;
   font-style: normal;
-  font-weight: 500;
   line-height: 32px;
   max-width: 300px;
 
@@ -191,7 +191,7 @@ export const FeatureIlustrationItemDescription = styled.p`
   color: #5b5c5e;
   max-width: 278px;
   font-family: 'Public Sans';
-  font-size: 19px;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
