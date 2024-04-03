@@ -11,12 +11,9 @@ import {
   HeroButton,
   SecondayHeroButton,
 } from './styles';
+import { PiMouseSimpleDuotone } from 'react-icons/pi';
 
 import MouseIcon from '~/assets/Up.svg';
-import MouseIcon2 from '~/assets/float-icon.svg';
-
-import AppDemoImage from '~/assets/app.svg'
-
 
 export const Hero = () => {
   return (
@@ -28,22 +25,18 @@ export const Hero = () => {
             <mark>simples</mark>
           </HeroTitle>
           <HeroText>
-            Encontrar ótimas ofertas nos supermercados em Angola agora é mais
-            fácil do que nunca! Uma plataforma onde podes encontrar as melhores
-            ofertas nos mercados
+            Uma plataforma onde podes encontrar as melhores ofertas nos mercados
           </HeroText>
           <HeroTextContainerButtons>
             <HeroButton>
-              <MouseIcon /> Saber mais
+              <PiMouseSimpleDuotone fontSize='1.4em' />
+              <span> Saber mais</span>
             </HeroButton>
             <SecondayHeroButton>Baixar a APP</SecondayHeroButton>
-            <div className='mobile-mouse-icon'>
-              <MouseIcon2 />
-            </div>
           </HeroTextContainerButtons>
         </HeroTextContainer>
         <HeroImageContainer>
-          <img src='/app.png' alt='' />
+          <img src='/hero-image.png' alt='' />
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>

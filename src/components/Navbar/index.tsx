@@ -1,5 +1,3 @@
-'use client';
-
 import KontoLogo from '~/assets/logo.svg';
 import KontoLogoMobile from '~/assets/logo-mobile.svg';
 
@@ -86,10 +84,10 @@ export const Navbar = () => {
                 </MenuItem>
               </Link>
             ))}
+
+            <ButtonLogin>Criar conta</ButtonLogin>
           </MenuContainer>
         </div>
-
-        <ButtonLogin>Criar conta</ButtonLogin>
 
         <ButtonMenuMobile
           isOpen={mobileOpen}

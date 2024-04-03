@@ -12,18 +12,19 @@ export const NavbarContainer = styled.section`
 
 export const NavbarContentContainer = styled.section`
   width: 100%;
-  height: auto;
-  background-color: #fcfffd;
+  height: 80px;
   display: flex;
-  flex-direction: row;
+  background-color: #fcfffd;
+  align-items: center;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
-  padding-top: 80px;
   justify-content: space-between;
-
+  position: fixed;
+  z-index:10000;
   .navbar-content {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -53,7 +54,6 @@ export const NavbarContentContainer = styled.section`
 export const Logo = styled.div`
   width: auto;
   height: auto;
-  margin-right: 75px;
   max-width: 288px;
 
   @media (max-width: 1190px) {
@@ -67,6 +67,7 @@ export const MenuContainer = styled.ul`
   flex-direction: row;
   align-items: center;
   list-style: none;
+  gap: 32px;
 
   @media (max-width: 1080px) {
     display: none;
@@ -78,11 +79,10 @@ interface IMenuItem {
 }
 
 export const MenuItem = styled.li<IMenuItem>`
-  margin-right: 32px;
   color: #000;
   text-align: center;
   font-family: 'Inter';
-  font-size: 20px;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: ${({ active }) => (active ? '700' : '400')};
   line-height: 30px;
@@ -92,32 +92,38 @@ export const MenuItem = styled.li<IMenuItem>`
     
     /* font-weight: 700; */
     opacity: .5;
+  
   }
 `;
 
 export const ButtonLogin = styled.button`
+  cursor: pointer;
   display: flex;
   width: 145px;
-  height: 56px;
+  height: 48px;
   padding: 10px 16px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   flex-shrink: 0;
   border-radius: 54px;
-  background: #29ba66;
+  background: transparent;
   outline: none;
-  border: none;
-  color: #fff;
+  border: 1.5px solid #0f2016;
+  color: #0f2016;
   text-align: center;
   font-family: 'Public Sans';
-  font-size: 18px;
+  font-size:1.1em;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  transition:all ease-in-out .4s;
 
   @media (max-width: 1080px) {
     display: none;
+  }
+  &:hover {
+   background-color:#0f2016;
+   color: #fff;
   }
 `;
 

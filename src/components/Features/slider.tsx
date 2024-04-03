@@ -7,8 +7,6 @@ import {
   SliderControlDots,
 } from './styles';
 import { SliderControlButtons } from '../Reviews/utils';
-import AppStore from '~/assets/appstore.svg';
-import GooglePlay from '~/assets/google-play.svg';
 
 const CustomSlider = ({ slides, id }: { slides: any[]; id?: string }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -114,10 +112,7 @@ const CustomSlider = ({ slides, id }: { slides: any[]; id?: string }) => {
           duration: 0.5,
         }}
       >
-        <div
-          ref={sliderItemRef}
-          style={{ width: '100%', cursor: 'pointer' }}
-        >
+        <div ref={sliderItemRef} style={{ width: '100%', cursor: 'pointer' }}>
           {slides[currentSlide]}
         </div>
       </motion.div>
