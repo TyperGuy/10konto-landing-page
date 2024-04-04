@@ -53,20 +53,20 @@ const data = [
 const dataScreens = [
   {
     number: 1,
-    image: <AppHome />,
+    image: '/home.png',
     title: 'Procure pelo producto que precisa',
     description: 'De forma simples e intuitiva encontre o producto que precisa',
   },
   {
     number: 2,
-    image: <AppSearch />,
+    image: '/search.png',
     title: 'Escolha entre as variadas possibilidades',
     description: 'Identifique o melhor custo beneficio para o seu bolso',
   },
 
   {
     number: 3,
-    image: <AppProduct />,
+    image: '/product.png',
     title: 'Analise as especificações do produto',
     description:
       'Descubra tudo sobre o produto, e tome a melhor decisão para o seu bolso',
@@ -98,8 +98,8 @@ export const Features = () => {
           </FeatureIlustrationItemDescription>
         </div>
       </div>
-      <FeatureIlustrationImage className={'image-' + item.number}>
-        {item.image}
+      <FeatureIlustrationImage className={`image-il image-${item.number}`}>
+        <img src={item.image} alt="" />
       </FeatureIlustrationImage>
     </FeatureIlustrationItem>
   ));
