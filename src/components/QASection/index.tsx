@@ -19,6 +19,15 @@ import {
 } from './styles';
 import { QAItem } from './qa-item';
 import ContactImage from '~/assets/contact.svg';
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  ChakraProvider,
+} from '@chakra-ui/react';
 
 export const QASection = () => {
   const [data, setData] = useState([
@@ -29,19 +38,31 @@ export const QASection = () => {
         'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial <a href="#">clicando aqui.</a>',
     },
     {
-      id: 1,
+      id: 2,
       title: 'Como faço para ser parceiro ?',
       description:
         'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
     },
     {
-      id: 1,
+      id: 3,
       title: 'Como faço para ser parceiro ?',
       description:
         'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
     },
     {
-      id: 1,
+      id: 4,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
+    },
+    {
+      id: 5,
+      title: 'Como faço para ser parceiro ?',
+      description:
+        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
+    },
+    {
+      id: 6,
       title: 'Como faço para ser parceiro ?',
       description:
         'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
@@ -56,11 +77,18 @@ export const QASection = () => {
       <QASectionMainContentContainer>
         <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
         <QASectionContentContainer>
-          <QASectionList>
-            {data.map((item) => (
-              <QAItem {...item} key={item.id} />
-            ))}
-          </QASectionList>
+          <ChakraProvider>
+            <Accordion
+              width='100%'
+              maxWidth='600px'
+              defaultIndex={[0]}
+              allowMultiple={false}
+            >
+              {data.map((item) => (
+                <QAItem {...item} key={item.id} />
+              ))}
+            </Accordion>
+          </ChakraProvider>
           <QASectionCard>
             <QASectionCardDemoImage>
               <img src='/contact.png' />

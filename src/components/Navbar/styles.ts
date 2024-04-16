@@ -19,8 +19,7 @@ export const NavbarContentContainer = styled.section`
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
   justify-content: space-between;
-  position: fixed;
-  z-index:10000;
+
   .navbar-content {
     width: 100%;
     display: flex;
@@ -87,11 +86,11 @@ export const MenuItem = styled.li<IMenuItem>`
   font-weight: ${({ active }) => (active ? '700' : '400')};
   line-height: 30px;
   transition:.5s;
-
   &:hover {
     
     /* font-weight: 700; */
-    opacity: .5;
+    color: #29ba66;
+    
   
   }
 `;

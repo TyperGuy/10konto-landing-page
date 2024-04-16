@@ -4,11 +4,10 @@ import { CONTENT_MAX_WIDTH, HORIZONTAL_PADDING } from '~/constants/sizes';
 export const HeroContainer = styled.section`
   width: 100%;
   height: auto;
-  padding:  70px 0;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
   background-color: #fcfffd;
-  margin-top: 80px;
+  margin: 50px 0;
   ${CONTENT_MAX_WIDTH}
 
   @media (max-width: 767px) {
@@ -150,7 +149,7 @@ export const HeroImageContainer = styled.div`
   width: 100%;
 
   img {
-    width: 450px;
+    width: 550px;
     height: auto;
   }
 

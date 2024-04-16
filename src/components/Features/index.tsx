@@ -99,7 +99,7 @@ export const Features = () => {
         </div>
       </div>
       <FeatureIlustrationImage className={`image-il image-${item.number}`}>
-        <img src={item.image} alt="" />
+        <img src={item.image} alt='' />
       </FeatureIlustrationImage>
     </FeatureIlustrationItem>
   ));
