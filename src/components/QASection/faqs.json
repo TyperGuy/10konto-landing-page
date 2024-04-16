@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Como me cadastrar?",
+      "description": "Clique em 'Registrar', preencha o formulário e comece a usar."
+    },
+    {
+      "id": 2,
+      "title": "Onde encontro os melhores preços?",
+      "description": "Use a função de pesquisa para comparar os preços dos produtos."
+    },
+    {
+      "id": 3,
+      "title": "Posso agendar compras?",
+      "description": "Sim, escolha data e horário na hora da compra."
+    },
+    {
+      "id": 4,
+      "title": "Como acompanho meu pedido?",
+      "description": "Veja o status na seção 'Meus Pedidos'."
+    },
+    {
+      "id": 5,
+      "title": "Posso devolver produtos?",
+      "description": "Sim, siga as políticas de devolução do supermercado."
+    },
+    {
+      "id": 6,
+      "title": "Como falar com o suporte?",
+      "description": "Use o chat ao vivo ou envie um e-mail."
+    },
+    {
+      "id": 7,
+      "title": "Onde acho as políticas?",
+      "description": "Na seção 'Termos e Condições'."
+    }
+  ]
+  

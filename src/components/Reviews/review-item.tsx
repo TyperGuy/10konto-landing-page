@@ -16,6 +16,7 @@ import {
 import Start from '~/assets/Star 1.svg';
 import AppStore from '~/assets/appstore.svg';
 import GooglePlay from './../../assets/google-play.svg';
+import { useEffect } from 'react';
 
 const icones = {
   'app-store': <AppStore />,
@@ -30,13 +31,12 @@ interface Author {
 
 export interface Review {
   id: number;
-  author: Author;
-  text: string;
-  source: {
-    name: string;
-    icone: string;
-  };
+  name: string;
+  profile_picture: string;
+  comment: string;
   stars: number;
+  platform: string;
+  occupation: string;
 }
 
 interface ReviewItemProps {
@@ -52,34 +52,29 @@ export const ReviewItem = ({ data }: ReviewItemProps) => {
 
   return (
     <ReviewsItem>
-      <ReviewsItemHeader>
-        <ReviewsItemHeaderPic src='/pic.png' />
-        <div>
-          <ReviewsItemHeaderName>{data.author.name}</ReviewsItemHeaderName>
-          <ReviewsItemHeaderOcupation>
-            {data.author.occupation}
-          </ReviewsItemHeaderOcupation>
-        </div>
-      </ReviewsItemHeader>
-      <ReviewsItemStartsList>
-        {starts.map((item) => (
-          <ReviewsItemStart key={item}>
-            <Start />
-          </ReviewsItemStart>
-        ))}
-      </ReviewsItemStartsList>
-      <ReviewsText>
-        {`
-         “ ${data.text} “
-        `}
-      </ReviewsText>
+      <div className='top'>
+        <ReviewsItemHeader>
+          <ReviewsItemHeaderPic src='/pic.png' />
+          <div>
+            <ReviewsItemHeaderName>{data.name}</ReviewsItemHeaderName>
+            <ReviewsItemHeaderOcupation>
+              {data.occupation}
+            </ReviewsItemHeaderOcupation>
+          </div>
+        </ReviewsItemHeader>
+        <ReviewsItemStartsList>
+          {starts.map((item) => (
+            <ReviewsItemStart key={item}>
+              <Start />
+            </ReviewsItemStart>
+          ))}
+        </ReviewsItemStartsList>
+        <ReviewsText>{data.comment}</ReviewsText>
+      </div>
       <ReviewsSourceContainer>
-        <ReviewsSourceIcon>
-          <img src={data.source.icone} alt="" />
-        </ReviewsSourceIcon>
         <div className='source-content'>
           <p className='legend'>Avaliado via</p>
-          <ReviewsSourceName>{data.source.name}</ReviewsSourceName>
+          <ReviewsSourceName>{data.platform}</ReviewsSourceName>
         </div>
       </ReviewsSourceContainer>
     </ReviewsItem>

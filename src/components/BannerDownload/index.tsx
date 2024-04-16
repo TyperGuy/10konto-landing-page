@@ -21,24 +21,24 @@ export const BannerDownload = () => {
         <BackgroundIllistration />
       </BannerBackgroundIllustration> */}
       <BannerTitle>
-        Baixe a APP e comece já a economizar nas suas compras
+        Baixe o aplicativo e comece já a economizar nas suas compras
       </BannerTitle>
       <BannerDescription>
         O seu assistente para compras inteligentes
       </BannerDescription>
 
       <BannerGroupButtons>
-        <BannerButton href='#'>
-          <AppStore />
+        <BannerButton>
+          <img src='/app_store.png' />
         </BannerButton>
-        <BannerButton href='#'>
-          <GooglePlay />
+        <BannerButton>
+          <img src='/play_store.png' />
         </BannerButton>
-        <BannerButton className='mobile' href='#'>
-          <img src='/appstore-mobile.svg' />
+        <BannerButton className='mobile'>
+          <img src='/app_store.png' />
         </BannerButton>
-        <BannerButton className='mobile' href='#'>
-          <img src='/goolge-mobile.svg' />
+        <BannerButton className='mobile'>
+          <img src='/play_store.png' />
         </BannerButton>
       </BannerGroupButtons>
     </BannerContainer>

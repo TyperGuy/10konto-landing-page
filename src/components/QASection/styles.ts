@@ -46,7 +46,7 @@ export const QASectionContentContainer = styled.section`
 export const QASectionTitle = styled.h1`
   color: #003c2f;
   font-family: 'Public Sans';
-  font-size: 72px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
   line-height: 90px;
@@ -161,6 +161,7 @@ export const QASectionCard = styled.div`
     width: 100%;
     border-radius: 0px;
   }
+  
 
   .card-bottom-container {
     width: 100%;
@@ -170,7 +171,7 @@ export const QASectionCard = styled.div`
     justify-content: space-between;
     background-color: white;
     height: 155px;
-    padding: 10px 10px 10px 32px;
+    padding: 32px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
@@ -178,7 +179,7 @@ export const QASectionCard = styled.div`
     border-right: 2px solid var(--Gray-700, #e7e9e8);
     border-bottom: 2px solid var(--Gray-700, #e7e9e8);
     border-left: 2px solid var(--Gray-700, #e7e9e8);
-
+   
     @media (max-width: 950px) {
       border-radius: 0px;
       border: none;
@@ -233,7 +234,7 @@ export const QASectionCardButton = styled.button`
   border: none;
   cursor: pointer;
   font-family: 'Public Sans';
-  font-size: 22px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 109.091% */

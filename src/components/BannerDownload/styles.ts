@@ -36,10 +36,10 @@ export const BannerTitle = styled.h1`
   color: var(--Gray-100, #0f2016);
   text-align: center;
   font-family: 'Public Sans';
-  font-size: 48px;
+  font-size: 42px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 60px;
+  font-weight: 600;
+  line-height: 45px;
   letter-spacing: -0.96px;
   max-width: 647px;
   z-index: 2;
@@ -106,10 +106,21 @@ export const BannerGroupButtons = styled.div`
   }
 `;
 
-export const BannerButton = styled.a`
+export const BannerButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: none;
   border: none;
   text-decoration: none;
+  height: 68px;
+  width: 210px;
+  padding: 16px;
+  background-color: red;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #222;
+  cursor: pointer;
 
   @media (max-width: 600px) {
     display: none;

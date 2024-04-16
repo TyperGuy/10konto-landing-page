@@ -15,6 +15,7 @@ import {
 
 import AppStore from '~/assets/appstore.svg';
 
+import reviews from './reviews.json';
 import { SliderControlButtons } from './utils';
 import { useWindowSize } from '~/hooks/useMediaQuery';
 import CustomSlider from '../Features/slider';
@@ -27,121 +28,6 @@ export const Reviews = () => {
   const isMobile = width <= 906;
 
   const isWideScreen = width >= 1650;
-  const [data, setData] = useState<Review[]>([
-    {
-      id: 1,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/app-store.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 2,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/app-store.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 3,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/app-store.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 4,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/google-play.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 5,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/google-play.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 6,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/google-play.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-
-    {
-      id: 7,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/app-store.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-    {
-      id: 8,
-      author: {
-        name: 'Batista Tone',
-        occupation: 'Ministro da Economia',
-        pic: '/pic.png',
-      },
-      stars: 3,
-      source: {
-        icone: '/app-store.svg',
-        name: 'App Store',
-      },
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ipsum alias sint quibusdam et tempore adipisci. Rerum, dicta earum quasi sit harum vero accusamus explicabo impedit praesentium voluptatibus soluta esse excepturi quidem reprehenderit fugit tempora itaque ratione quia magnam unde ab numquam quae aperiam? Dolorem rem incidunt atque vero!',
-    },
-  ]);
 
   const scrollBarD = () => {
     if (width <= 1512 && width >= 1228) {
@@ -201,14 +87,14 @@ export const Reviews = () => {
     });
   };
 
-  const showScroll = data.length > 3;
+  const showScroll = reviews.length > 3;
 
-  const listItemsReview = data.map((item) => (
+  const listItemsReview = reviews.map((item) => (
     <ReviewItem key={item.id} data={item} />
   ));
 
   return (
-    <ReviewsContainer id="opinioes">
+    <ReviewsContainer id='opinioes'>
       <ReviewsContentContainer>
         <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
 

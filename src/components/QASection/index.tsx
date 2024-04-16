@@ -18,7 +18,7 @@ import {
   QASectionMainContentContainer,
 } from './styles';
 import { QAItem } from './qa-item';
-import ContactImage from '~/assets/contact.svg';
+import faqs from './faqs.json';
 import {
   Accordion,
   AccordionButton,
@@ -30,48 +30,6 @@ import {
 } from '@chakra-ui/react';
 
 export const QASection = () => {
-  const [data, setData] = useState([
-    {
-      id: 1,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial <a href="#">clicando aqui.</a>',
-    },
-    {
-      id: 2,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
-    },
-    {
-      id: 3,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
-    },
-    {
-      id: 4,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
-    },
-    {
-      id: 5,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
-    },
-    {
-      id: 6,
-      title: 'Como faço para ser parceiro ?',
-      description:
-        'Para ser parceiro do 10Konto basta entrar em contcto com a nossa equipe comercial clicando aqui.',
-    },
-  ]);
-
-  const avatars = [1, 2, 3, 4];
-  const lastAvatar = avatars.length - 1;
-
   return (
     <QASectionContainer id='faqs'>
       <QASectionMainContentContainer>
@@ -84,7 +42,7 @@ export const QASection = () => {
               defaultIndex={[0]}
               allowMultiple={false}
             >
-              {data.map((item) => (
+              {faqs.map((item) => (
                 <QAItem {...item} key={item.id} />
               ))}
             </Accordion>
@@ -95,14 +53,12 @@ export const QASection = () => {
             </QASectionCardDemoImage>
             <div className='card-bottom-container'>
               <QASectionCardButton>Falar com um agente</QASectionCardButton>
-              <QASectionContactsList>
-                {avatars.map((item, index) => (
-                  <QASectionContactsListItem key={item}>
-                    <img src='/pic.png' className='pic' alt='' />
-                    {lastAvatar === index && <div className='dot' />}
-                  </QASectionContactsListItem>
-                ))}
-              </QASectionContactsList>
+              <img
+                src='/speakers.png'
+                style={{
+                  width: '200px',
+                }}
+              />
             </div>
           </QASectionCard>
         </QASectionContentContainer>

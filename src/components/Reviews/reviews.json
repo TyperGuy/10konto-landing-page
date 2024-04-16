@@ -1,0 +1,93 @@
+
+[
+    {
+      "id": 1,
+      "name": "Maria da Silva",
+      "occupation": "Dona de casa",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "10konto é uma revolução para aqueles que procuram economizar dinheiro nas compras de supermercado em Luanda! Com várias opções de supermercados dentro da plataforma, posso comparar preços e escolher os produtos mais baratos. Minha experiência tem sido excelente!",
+      "stars": 3,
+      "platform": "Play Store"
+    },
+    {
+      "id": 2,
+      "name": "João dos Santos",
+      "occupation": "Retalhista",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "Com o 10konto, posso fazer minhas compras de supermercado de forma rápida e econômica. É ótimo ter acesso a várias opções de supermercados em um só lugar. Eu recomendo!",
+      "stars": 5,
+      "platform": "App Store"
+    },
+    {
+      "id": 3,
+      "name": "Ana Oliveira",
+      "occupation": "Gerente de loja",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "10konto facilitou minha vida em Luanda! Com tantos supermercados disponíveis na plataforma, posso encontrar os melhores preços e economizar tempo nas compras. Excelente aplicativo!",
+      "stars": 4,
+      "platform": "Trustpilot"
+    },
+    {
+      "id": 4,
+      "name": "Carlos Mendonça",
+      "occupation": "Engenheiro",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "Tenho usado o 10konto há alguns meses e estou muito satisfeito com os resultados. Economizo dinheiro nas minhas compras de supermercado e ainda economizo tempo. Eu recomendo a todos!",
+      "stars": 3,
+      "platform": "Play Store"
+    },
+    {
+      "id": 5,
+      "name": "Isabel Pereira",
+      "occupation": "Funcionária",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "Com o 10konto, posso comparar os preços dos produtos em diferentes supermercados de Luanda. Isso me ajuda a economizar muito dinheiro! Excelente aplicativo!",
+      "stars": 4,
+      "platform": "App Store"
+    },
+    {
+      "id": 6,
+      "name": "Paulo Costa",
+      "occupation": "Retalhista",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "O 10konto é uma ferramenta indispensável para quem deseja economizar nas compras de supermercado em Luanda. Eu recomendo a todos que buscam conveniência e bons preços!",
+      "stars": 3,
+      "platform": "Trustpilot"
+    },
+    {
+      "id": 7,
+      "name": "Marta Cardoso",
+      "occupation": "Retalhista",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "O 10konto facilitou minha vida quando se trata de fazer compras em supermercados. Agora posso encontrar os melhores preços sem sair de casa. Muito obrigado!",
+      "stars": 4,
+      "platform": "Play Store"
+    },
+    {
+      "id": 8,
+      "name": "Miguel Fonseca",
+      "occupation": "Grocista",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "Graças ao 10konto, posso economizar tempo e dinheiro nas minhas compras de supermercado. É uma excelente ferramenta para quem mora em Luanda!",
+      "stars": 5,
+      "platform": "App Store"
+    },
+    {
+      "id": 9,
+      "name": "Carolina Rodrigues",
+      "occupation": "Dona de casa",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "O 10konto é um aplicativo incrível! Com ele, posso encontrar os melhores preços nos supermercados de Luanda e economizar bastante. Recomendo a todos!",
+      "stars": 4,
+      "platform": "Trustpilot"
+    },
+    {
+      "id": 10,
+      "name": "Rui Almeida",
+      "occupation": "Gerente de loja",
+      "profile_picture": "[Inserir foto de perfil]",
+      "comment": "Estou muito satisfeito com o 10konto. É prático, fácil de usar e me ajuda a economizar muito dinheiro nas compras de supermercado. Excelente aplicativo!",
+      "stars": 3,
+      "platform": "Play Store"
+    }
+]

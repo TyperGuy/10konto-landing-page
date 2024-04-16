@@ -27,7 +27,7 @@ export const ReviewsContentContainer = styled.div`
 export const ReviewsTitle = styled.h1`
   color: #003c2f;
   font-family: 'Public Sans';
-  font-size: 72px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 90px;
@@ -77,56 +77,54 @@ export const ReviewsList = styled.ul`
 
 export const ReviewsItem = styled.div`
   display: flex;
-  width: 462px;
-  min-height: 558px;
-  padding: 48px;
+  width: 410px;
+  padding: 42px;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
   gap: 26px;
   flex-shrink: 0;
   border-radius: 20px;
-  border: 1px solid #e6f1ed;
+  border: 1px solid #E5E9EF;
   background: #fff;
   box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.07);
   margin-right: 44px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 
   @media (max-width: 906px) {
     width: 100%;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
   }
 `;
 
 export const ReviewsItemHeader = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items:center;
   gap: 16px;
 `;
 
 export const ReviewsItemHeaderPic = styled.img`
-  width: 74px;
-  height: 74px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
 `;
 
 export const ReviewsItemHeaderName = styled.h1`
   color: #0f2016;
   font-family: 'Public Sans';
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
 `;
 
-export const ReviewsItemHeaderOcupation = styled.p`
+export const ReviewsItemHeaderOcupation = styled.span`
   color: #57635c;
   font-family: 'Public Sans';
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
 `;
 
 export const ReviewsItemStartsList = styled.ul`
@@ -134,6 +132,7 @@ export const ReviewsItemStartsList = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 2px;
 `;
 
 export const ReviewsItemStart = styled.div``;
@@ -141,25 +140,29 @@ export const ReviewsItemStart = styled.div``;
 export const ReviewsText = styled.p`
   color: #000;
   font-family: 'Public Sans';
-  font-size: 19px;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: 300;
-  line-height: 32px;
-  min-height: 260px;
+  line-height: 30px;
   max-width: 100%;
 `;
 
 export const ReviewsSourceContainer = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-self: flex-end;
   gap: 10px;
-
+  
+  
   .source-content {
-    height: 45px;
+    width: 100%;
+    padding: 16px 0;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-top: 1px solid #DEDEDE;
+    
   }
 
   .legend {
@@ -234,9 +237,16 @@ export const ReviewsScrollControllerContainer = styled.div`
   gap: 16px;
 `;
 
-export const ReviewsScrollControllerButton = styled.button`
-  background-color: transparent;
+export const ReviewsScrollControllerButton = styled.div`
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E5E9EF;
   outline: none;
   border: none;
   cursor: pointer;
+  
 `;
