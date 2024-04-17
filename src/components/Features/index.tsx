@@ -20,12 +20,7 @@ import {
 
 import React from 'react';
 
-import AppHome from '~/assets/home.svg';
-import AppSearch from '~/assets/search.svg';
-import AppProduct from '~/assets/product.svg';
-import { useEffect, useRef, useState } from 'react';
 import { useWindowSize } from '~/hooks/useMediaQuery';
-import { SliderControlButtons } from '../Reviews/utils';
 import CustomSlider from './slider';
 
 const data = [
@@ -107,7 +102,7 @@ export const Features = () => {
   return (
     <FeaturesContainer>
       <FeaturesContentContainer>
-        <FeaturesList id='beneficios'>
+        {/*<FeaturesList id='beneficios'>
           {data.map((item) => (
             <FeaturesItem key={item.title}>
               <FeaturesItemIconContainer>{item.icon}</FeaturesItemIconContainer>
@@ -119,7 +114,7 @@ export const Features = () => {
               </div>
             </FeaturesItem>
           ))}
-        </FeaturesList>
+        </FeaturesList> */}
         {!isMobile && (
           <FeatureIlustrationList id='funcionamento'>
             {cardsItem}

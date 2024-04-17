@@ -35,7 +35,7 @@ export const QASectionContentContainer = styled.section`
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items:center;
   justify-content: space-between;
 
   @media (max-width: 950px) {
@@ -145,7 +145,7 @@ export const QASectionItemDescription = styled.p`
 `;
 
 export const QASectionCard = styled.div`
-  width: 610px;
+  width: 550px;
   height: auto;
   flex-shrink: 0;
   background-color: #fff;

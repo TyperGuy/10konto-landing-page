@@ -14,7 +14,7 @@ export const NavbarContentContainer = styled.section`
   width: 100%;
   height: 80px;
   display: flex;
-  background-color: #fcfffd;
+  background-color: rgb(237 253 242);
   align-items: center;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;

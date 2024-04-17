@@ -6,8 +6,8 @@ export const HeroContainer = styled.section`
   height: auto;
   padding-left: ${HORIZONTAL_PADDING}px;
   padding-right: ${HORIZONTAL_PADDING}px;
-  background-color: #fcfffd;
-  margin: 50px 0;
+  background-color: rgb(237 253 242);
+  padding-top: 26px;
   ${CONTENT_MAX_WIDTH}
 
   @media (max-width: 767px) {

@@ -38,9 +38,10 @@ export const QASection = () => {
           <ChakraProvider>
             <Accordion
               width='100%'
-              maxWidth='600px'
+              maxWidth='500px'
               defaultIndex={[0]}
               allowMultiple={false}
+              allowToggle
             >
               {faqs.map((item) => (
                 <QAItem {...item} key={item.id} />
