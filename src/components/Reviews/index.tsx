@@ -94,7 +94,11 @@ export const Reviews = () => {
   ));
 
   return (
-    <ReviewsContainer id='opinioes'>
+    <ReviewsContainer
+      id='opinioes'
+      data-aos='fade-up'
+      data-aos-anchor-placement='top-bottom'
+    >
       <ReviewsContentContainer>
         <ReviewsTitle>Opiniões daqueles que usam</ReviewsTitle>
 

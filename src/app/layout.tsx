@@ -1,13 +1,25 @@
 'use client';
 
+import { useEffect } from 'react';
 import './globals.css';
 import StyledComponentsRegistry from '~/lib/registry';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  useEffect(() => {
+    AOS.init({
+      disable: 'phone',
+      duration: 700,
+      easing: 'ease-out-cubic',
+    });
+  }, []);
+
   return (
     <html lang='en'>
       <link

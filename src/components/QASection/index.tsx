@@ -33,7 +33,12 @@ export const QASection = () => {
   return (
     <QASectionContainer id='faqs'>
       <QASectionMainContentContainer>
-        <QASectionTitle>Tem alguma dúvida ?</QASectionTitle>
+        <QASectionTitle
+          data-aos='fade-up'
+          data-aos-anchor-placement='top-bottom'
+        >
+          Tem alguma dúvida ?
+        </QASectionTitle>
         <QASectionContentContainer>
           <ChakraProvider>
             <Accordion
@@ -49,10 +54,17 @@ export const QASection = () => {
             </Accordion>
           </ChakraProvider>
           <QASectionCard>
-            <QASectionCardDemoImage>
+            <QASectionCardDemoImage
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+            >
               <img src='/contact.png' />
             </QASectionCardDemoImage>
-            <div className='card-bottom-container'>
+            <div
+              className='card-bottom-container'
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+            >
               <QASectionCardButton>Falar com um agente</QASectionCardButton>
               <img
                 src='/speakers.png'

@@ -13,7 +13,7 @@ import {
 } from './styles';
 import { PiMouseSimpleDuotone } from 'react-icons/pi';
 
-import MouseIcon from '~/assets/Up.svg';
+
 
 export const Hero = () => {
   return (
@@ -35,8 +35,8 @@ export const Hero = () => {
             <SecondayHeroButton>Baixar a APP</SecondayHeroButton>
           </HeroTextContainerButtons>
         </HeroTextContainer>
-        <HeroImageContainer>
-          <img src='/hero-image.png' alt='' />
+        <HeroImageContainer >
+          <img src='/hero-image.png' alt='' data-aos='zoom-y-out' />
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>

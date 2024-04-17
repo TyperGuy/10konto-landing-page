@@ -50,7 +50,10 @@ export const Footer = () => {
       <FooterContainer>
         <BannerDownload />
         <FooterContentContainer>
-          <AppMiniPresentation>
+          <AppMiniPresentation
+            data-aos='fade-up'
+            data-aos-anchor-placement='top-bottom'
+          >
             <FooterLogo>
               <Logo />
             </FooterLogo>
@@ -60,7 +63,7 @@ export const Footer = () => {
             </FooterAppDescription>
           </AppMiniPresentation>
 
-          <FooterMenu>
+          <FooterMenu data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
             {menu1.map((item) => (
               <FooterMenuItem key={item.title}>
                 <a href='#'>{item.title}</a>{' '}
@@ -69,7 +72,7 @@ export const Footer = () => {
             ))}
           </FooterMenu>
 
-          <FooterMenu>
+          <FooterMenu data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
             {menu2.map((item) => (
               <FooterMenuItem key={item.title}>
                 <a href='#'>{item.title}</a>{' '}
@@ -78,7 +81,7 @@ export const Footer = () => {
             ))}
           </FooterMenu>
 
-          <FooterMenu>
+          <FooterMenu data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
             {menu3.map((item) => (
               <FooterMenuItem key={item.title}>
                 <a href='#'>{item.title}</a>{' '}
@@ -89,7 +92,10 @@ export const Footer = () => {
         </FooterContentContainer>
       </FooterContainer>
 
-      <FooterRightsContainer>
+      <FooterRightsContainer
+        data-aos='fade-up'
+        data-aos-anchor-placement='top-bottom'
+      >
         <FooterRightsContentContainer>
           <FooterRightsContainerText>
             © 2024 <a href=''>Andromeda Labs</a> . Todos os direitos
@@ -97,7 +103,7 @@ export const Footer = () => {
           </FooterRightsContainerText>
           <FooterRightsNetworks>
             {networks.map((item, index) => (
-              <FooterRightsNetworksItem key={index+"icone"}>
+              <FooterRightsNetworksItem key={index + 'icone'}>
                 <a href='#'>{item}</a>
               </FooterRightsNetworksItem>
             ))}

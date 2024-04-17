@@ -53,6 +53,7 @@ export const Partners = () => {
         justify='center'
         align='center'
         padding='26px'
+        
       >
         <Flex
           maxW='1280px'

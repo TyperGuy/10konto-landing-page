@@ -33,6 +33,8 @@ export const QAItem = ({ description, title, id }: QAItemProps) => {
       borderRadius={'8px'}
       mt='10px'
       p={'6px 0'}
+      data-aos='fade-up'
+      data-aos-anchor-placement='top-bottom'
     >
       <h2>
         <AccordionButton _hover={{ bg: '#fff', color: '#29ba66' }}>

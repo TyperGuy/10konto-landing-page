@@ -28,10 +28,10 @@ export const BannerDownload = () => {
       </BannerDescription>
 
       <BannerGroupButtons>
-        <BannerButton>
+        <BannerButton data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
           <img src='/app_store.png' />
         </BannerButton>
-        <BannerButton>
+        <BannerButton data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
           <img src='/play_store.png' />
         </BannerButton>
         <BannerButton className='mobile'>
