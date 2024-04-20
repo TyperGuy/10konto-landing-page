@@ -95,31 +95,31 @@ export const Reviews = () => {
   ));
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+    // const handleScroll = () => {
+    //   const currentScrollY = window.scrollY;
 
-      if (currentScrollY > prevScrollY.current) {
-        // console.log('Scrolled down', currentScrollY);
-        if (currentScrollY >= 2026 && currentScrollY < 2645) {
-          handleNext();
-          handleNext();
-        }
-      } else {
-        // console.log('Scrolled up', currentScrollY);
-        if (currentScrollY >= 2026 && currentScrollY < 2645) {
-          handlePrev();
-          handlePrev();
-        }
-      }
+    //   if (currentScrollY > prevScrollY.current) {
+    //     // console.log('Scrolled down', currentScrollY);
+    //     if (currentScrollY >= 2026 && currentScrollY < 2645) {
+    //       handleNext();
+    //       handleNext();
+    //     }
+    //   } else {
+    //     // console.log('Scrolled up', currentScrollY);
+    //     if (currentScrollY >= 2026 && currentScrollY < 2645) {
+    //       handlePrev();
+    //       handlePrev();
+    //     }
+    //   }
 
-      prevScrollY.current = currentScrollY;
-    };
+    //   prevScrollY.current = currentScrollY;
+    // };
 
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener('scroll', handleScroll);
+    // };
   }, []);
 
   return (
