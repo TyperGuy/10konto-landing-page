@@ -24,6 +24,7 @@ export const Reviews = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const reviewsList = useRef<HTMLUListElement | null>(null);
   const { width } = useWindowSize();
+  const prevScrollY = useRef(0);
 
   const isMobile = width <= 906;
 
@@ -92,6 +93,34 @@ export const Reviews = () => {
   const listItemsReview = reviews.map((item) => (
     <ReviewItem key={item.id} data={item} />
   ));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > prevScrollY.current) {
+        // console.log('Scrolled down', currentScrollY);
+        if (currentScrollY >= 2026 && currentScrollY < 2645) {
+          handleNext();
+          handleNext();
+        }
+      } else {
+        // console.log('Scrolled up', currentScrollY);
+        if (currentScrollY >= 2026 && currentScrollY < 2645) {
+          handlePrev();
+          handlePrev();
+        }
+      }
+
+      prevScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <ReviewsContainer

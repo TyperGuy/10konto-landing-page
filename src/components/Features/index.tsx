@@ -16,6 +16,9 @@ import {
   FeaturesItemTitle,
   FeaturesList,
   FeaturesContentContainer,
+  FeaturesTitle,
+  FeaturesText,
+  FeaturesTextContainer,
 } from './styles';
 
 import React from 'react';
@@ -106,19 +109,22 @@ export const Features = () => {
   return (
     <FeaturesContainer>
       <FeaturesContentContainer>
-        {/*<FeaturesList id='beneficios'>
-          {data.map((item) => (
-            <FeaturesItem key={item.title}>
-              <FeaturesItemIconContainer>{item.icon}</FeaturesItemIconContainer>
-              <div>
-                <FeaturesItemTitle>{item.title}</FeaturesItemTitle>
-                <FeaturesItemDescription>
-                  {item.description}
-                </FeaturesItemDescription>
-              </div>
-            </FeaturesItem>
-          ))}
-        </FeaturesList> */}
+        <FeaturesTextContainer>
+          <FeaturesTitle
+            data-aos='fade-up'
+            data-aos-anchor-placement='top-bottom'
+          >
+            Como funciona o 10konto
+          </FeaturesTitle>
+          <FeaturesText
+            data-aos='fade-up'
+            data-aos-anchor-placement='top-bottom'
+          >
+            De forma muito simples e prática. Basta acessar o aplicativo e
+            começar a comprar de forma economica.
+          </FeaturesText>
+        </FeaturesTextContainer>
+
         {!isMobile && (
           <FeatureIlustrationList id='funcionamento'>
             {cardsItem}

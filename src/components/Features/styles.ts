@@ -22,6 +22,35 @@ export const FeaturesContentContainer = styled.section`
   ${CONTENT_MAX_WIDTH}
 `;
 
+export const FeaturesTextContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 101px;
+`;
+
+export const FeaturesTitle = styled.h1`
+  color: #fff;
+  font-family: 'Public Sans';
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -0.84px;
+`;
+
+export const FeaturesText = styled.p`
+  color: #fff;
+  font-family: 'Public Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 686px;
+`;
+
 export const FeaturesList = styled.ul`
   display: flex;
   flex-direction: row;
