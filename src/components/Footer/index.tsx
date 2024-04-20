@@ -23,7 +23,11 @@ import Logo from '~/assets/logo2.svg';
 import { BannerDownload } from '../BannerDownload';
 
 export const Footer = () => {
-  const networks = [<Facebook key={0} />, <Twitter  key={2}/>, <Instagram key={3} />];
+  const networks = [
+    <Facebook key={0} />,
+    <Twitter key={2} />,
+    <Instagram key={3} />,
+  ];
 
   const menu1 = [
     { title: 'Producto', status: '' },
@@ -47,7 +51,7 @@ export const Footer = () => {
 
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id='download'>
         <BannerDownload />
         <FooterContentContainer>
           <AppMiniPresentation

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import {
   HeroContainer,
   HeroContentContainer,
@@ -12,8 +13,6 @@ import {
   SecondayHeroButton,
 } from './styles';
 import { PiMouseSimpleDuotone } from 'react-icons/pi';
-
-
 
 export const Hero = () => {
   return (
@@ -28,14 +27,19 @@ export const Hero = () => {
             Uma plataforma onde podes encontrar as melhores ofertas nos mercados
           </HeroText>
           <HeroTextContainerButtons>
-            <HeroButton>
-              <PiMouseSimpleDuotone fontSize='1.4em' />
-              <span> Saber mais</span>
-            </HeroButton>
-            <SecondayHeroButton>Baixar a APP</SecondayHeroButton>
+            <Link href={'#download'}>
+              {' '}
+              <HeroButton>Baixar a APP</HeroButton>
+            </Link>
+            <Link href={'#funcionamento'}>
+              <SecondayHeroButton>
+                <PiMouseSimpleDuotone fontSize='1.4em' />
+                <span> Saber mais</span>
+              </SecondayHeroButton>
+            </Link>
           </HeroTextContainerButtons>
         </HeroTextContainer>
-        <HeroImageContainer >
+        <HeroImageContainer>
           <img src='/hero-image.png' alt='' data-aos='zoom-y-out' />
         </HeroImageContainer>
       </HeroContentContainer>

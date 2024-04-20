@@ -6,13 +6,6 @@ import {
   BannerTitle,
   BannerBackgroundIllustration,
 } from './styles';
-import AppStore from '~/assets/appstore2.svg';
-import GooglePlay from '~/assets/googleplay.svg';
-
-import AppStoreMobile from '~/assets/appstore-mobile.svg';
-import GooglePlayMobile from '~/assets/goolge-mobile.svg';
-
-import BackgroundIllistration from '~/assets/bannerr-bg.svg';
 
 export const BannerDownload = () => {
   return (

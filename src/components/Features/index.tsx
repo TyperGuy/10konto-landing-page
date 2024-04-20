@@ -107,7 +107,7 @@ export const Features = () => {
   ));
 
   return (
-    <FeaturesContainer>
+    <FeaturesContainer id='funcionamento'>
       <FeaturesContentContainer>
         <FeaturesTextContainer>
           <FeaturesTitle
@@ -126,13 +126,11 @@ export const Features = () => {
         </FeaturesTextContainer>
 
         {!isMobile && (
-          <FeatureIlustrationList id='funcionamento'>
-            {cardsItem}
-          </FeatureIlustrationList>
+          <FeatureIlustrationList>{cardsItem}</FeatureIlustrationList>
         )}
         {isMobile && (
           <>
-            <CustomSlider id={'funcionamento'} slides={cardsItem} />
+            <CustomSlider slides={cardsItem} />
           </>
         )}
       </FeaturesContentContainer>

@@ -117,7 +117,6 @@ export const HeroButton = styled.button`
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  justify-content: flex-start;
   color: #fff;
   text-align: center;
   font-family: 'Public Sans';

@@ -24,10 +24,6 @@ const menu = [
     link: '/',
   },
   {
-    title: 'Beneficios',
-    link: '#beneficios',
-  },
-  {
     title: 'Funcionamento',
     link: '#funcionamento',
   },
@@ -80,8 +76,6 @@ export const Navbar = () => {
                 <MenuItem
                   onMouseEnter={() => setItem(item.title)}
                   onMouseLeave={() => setItem('')}
-                  onClick={() => setActiveItem(item)}
-                  active={activeItem.title === item.title}
                 >
                   {item.title}
                   <div
