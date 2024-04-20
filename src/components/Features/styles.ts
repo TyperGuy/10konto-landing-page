@@ -29,6 +29,12 @@ export const FeaturesTextContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 101px;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
 
 export const FeaturesTitle = styled.h1`
@@ -39,6 +45,13 @@ export const FeaturesTitle = styled.h1`
   font-weight: 600;
   line-height: 90px;
   letter-spacing: -0.84px;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
 `;
 
 export const FeaturesText = styled.p`
@@ -49,6 +62,11 @@ export const FeaturesText = styled.p`
   font-weight: 400;
   line-height: 28px;
   max-width: 686px;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    max-width: 100%;
+  }
 `;
 
 export const FeaturesList = styled.ul`
