@@ -65,12 +65,25 @@ export const QASection = () => {
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
             >
-              <QASectionCardButton>Falar com um agente</QASectionCardButton>
+              <QASectionCardButton
+                data-aos='zoom-in'
+                data-aos-anchor-placement='top-bottom'
+                data-aos-easing='ease-in-out'
+                data-aos-delay={300}
+                data-aos-duration={500}
+              >
+                Falar com um agente
+              </QASectionCardButton>
               <img
                 src='/speakers.png'
                 style={{
                   width: '200px',
                 }}
+                data-aos='zoom-in'
+                data-aos-anchor-placement='top-bottom'
+                data-aos-easing='ease-in-out'
+                data-aos-delay={600}
+                data-aos-duration={500}
               />
             </div>
           </QASectionCard>

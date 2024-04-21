@@ -84,8 +84,11 @@ export const Features = () => {
   const cardsItem = dataScreens.map((item) => (
     <FeatureIlustrationItem
       key={item.number}
-      data-aos='fade-up'
+      data-aos='zoom-in'
       data-aos-anchor-placement='top-bottom'
+      data-aos-easing='ease-in-out'
+      data-aos-delay={300 * item.number}
+      data-aos-duration={500}
     >
       <div className='card-header'>
         <FeatureIlustrationItemNumber>

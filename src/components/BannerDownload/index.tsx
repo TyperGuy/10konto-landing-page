@@ -21,10 +21,20 @@ export const BannerDownload = () => {
       </BannerDescription>
 
       <BannerGroupButtons>
-        <BannerButton data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
+        <BannerButton
+          data-aos='zoom-in'
+          data-aos-anchor-placement='top-bottom'
+          data-aos-delay={300}
+          data-aos-duration={500}
+        >
           <img src='/app_store.png' />
         </BannerButton>
-        <BannerButton data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
+        <BannerButton
+          data-aos='zoom-in'
+          data-aos-anchor-placement='top-bottom'
+          data-aos-delay={600}
+          data-aos-duration={500}
+        >
           <img src='/play_store.png' />
         </BannerButton>
         <BannerButton className='mobile'>
