@@ -30,6 +30,11 @@ export const FeaturesTextContainer = styled.div`
   flex-direction: column;
   margin-bottom: 101px;
 
+  @media (max-width: 1435px) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
   @media (max-width: 900px) {
     justify-content: center;
     padding-left: 30px;
