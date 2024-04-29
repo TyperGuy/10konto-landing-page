@@ -10,9 +10,7 @@ import {
 export const BannerDownload = () => {
   return (
     <BannerContainer>
-      {/* <BannerBackgroundIllustration>
-        <BackgroundIllistration />
-      </BannerBackgroundIllustration> */}
+     
       <BannerTitle>
         Baixe o aplicativo e comece já a economizar nas suas compras
       </BannerTitle>

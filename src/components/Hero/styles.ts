@@ -4,25 +4,33 @@ import { CONTENT_MAX_WIDTH, HORIZONTAL_PADDING } from '~/constants/sizes';
 export const HeroContainer = styled.section`
   width: 100%;
   height: auto;
-  padding-left: ${HORIZONTAL_PADDING}px;
-  padding-right: ${HORIZONTAL_PADDING}px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(237 253 242);
   padding-top: 26px;
-  ${CONTENT_MAX_WIDTH}
-
-  @media (max-width: 767px) {
-    padding-left: 34px;
-    padding-right: 34px;
-    width: 100%;
-    padding-bottom: 51px;
-    padding-top: 41px;
-  }
 `;
 
 export const HeroContentContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+  width: 100%;
+  padding-left: ${HORIZONTAL_PADDING}px;
+  padding-right: ${HORIZONTAL_PADDING}px;
+  ${CONTENT_MAX_WIDTH}
+
+  @media (max-width: 1340px) {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 29px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 51px;
+    padding-top: 41px;
+  }
 `;
 
 export const HeroTextContainer = styled.div`
@@ -34,7 +42,7 @@ export const HeroTextContainer = styled.div`
   gap: 12px;
 
   @media (max-width: 1080px) {
-   margin-right: 0;
+    margin-right: 0;
   }
 `;
 
@@ -65,7 +73,6 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
-
   font-family: 'Public Sans';
   font-size: 1.25em;
   font-style: normal;
@@ -82,7 +89,7 @@ export const HeroTextContainerButtons = styled.div`
   display: flex;
   flex-direction: row;
   gap: 27px;
- margin-top: 16px;
+  margin-top: 16px;
   @media (max-width: 605px) {
     flex-direction: column;
     width: 100%;

@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import './globals.css';
 import StyledComponentsRegistry from '~/lib/registry';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function RootLayout({
   children,
@@ -15,8 +14,6 @@ export default function RootLayout({
   useEffect(() => {
     AOS.init({
       disable: 'phone',
-      duration: 700,
-      easing: 'ease-out-cubic',
     });
   }, []);
 

@@ -8,6 +8,7 @@ import {
 
 export const NavbarContainer = styled.section`
   ${CONTAINER_DEFAULT_PROPS}
+  background-color: rgb(237 253 242);
 `;
 
 export const NavbarContentContainer = styled.section`

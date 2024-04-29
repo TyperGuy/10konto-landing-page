@@ -116,7 +116,6 @@ export const BannerButton = styled.div`
   height: 68px;
   width: 210px;
   padding: 16px;
-  background-color: red;
   box-sizing: border-box;
   border-radius: 12px;
   background-color: #222;

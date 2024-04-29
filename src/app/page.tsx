@@ -9,6 +9,8 @@ import { QASection } from '~/components/QASection';
 import { Footer } from '~/components/Footer';
 import { Features } from '~/components/Features';
 import { Partners } from '~/components/Partners';
+// import 'aos/dist/aos.css';
+
 
 export default function Home() {
   return (
