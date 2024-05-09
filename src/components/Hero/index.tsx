@@ -27,11 +27,11 @@ export const Hero = () => {
             Uma plataforma onde podes encontrar as melhores ofertas nos mercados
           </HeroText>
           <HeroTextContainerButtons>
-            <Link href={'#download'}>
+            <Link href={'#download'} passHref>
               {' '}
               <HeroButton>Baixar a APP</HeroButton>
             </Link>
-            <Link href={'#funcionamento'}>
+            <Link href={'#funcionamento'} passHref>
               <SecondayHeroButton>
                 <PiMouseSimpleDuotone fontSize='1.4em' />
                 <span> Saber mais</span>

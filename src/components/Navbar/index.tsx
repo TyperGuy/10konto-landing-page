@@ -72,7 +72,7 @@ export const Navbar = () => {
 
           <MenuContainer>
             {menu.map((item) => (
-              <Link key={item.title} href={item.link}>
+              <Link key={item.title} href={item.link} passHref>
                 <MenuItem
                   onMouseEnter={() => setItem(item.title)}
                   onMouseLeave={() => setItem('')}
@@ -110,7 +110,7 @@ export const Navbar = () => {
 
         <MenuMobile>
           {menu.map((item) => (
-            <Link key={item.title} href={item.link}>
+            <Link key={item.title} href={item.link} passHref>
               <MenuItem
                 onClick={() => {
                   closeMenu();

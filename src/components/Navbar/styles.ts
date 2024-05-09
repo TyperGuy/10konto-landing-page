@@ -215,7 +215,7 @@ export const MenuMobile = styled.ul`
 
 export const MenuMobileItem = styled(MenuItem)``;
 
-export const MenuMobileTitle = styled.h1`
+export const MenuMobileTitle = styled.h2`
   color: var(--Gray-100, #0f2016);
   font-family: 'Public Sans';
   font-size: 27px;

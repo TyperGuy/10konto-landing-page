@@ -24,7 +24,7 @@ export const ReviewsContentContainer = styled.div`
   ${CONTENT_MAX_WIDTH}
 `;
 
-export const ReviewsTitle = styled.h1`
+export const ReviewsTitle = styled.h2`
   color: #003c2f;
   font-family: 'Public Sans';
   font-size: 48px;
@@ -111,7 +111,7 @@ export const ReviewsItemHeaderPic = styled.img`
   border-radius: 100%;
 `;
 
-export const ReviewsItemHeaderName = styled.h1`
+export const ReviewsItemHeaderName = styled.h2`
   color: #0f2016;
   font-family: 'Public Sans';
   font-size: 18px;

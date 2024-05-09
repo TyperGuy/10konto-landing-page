@@ -42,7 +42,7 @@ export const FeaturesTextContainer = styled.div`
   }
 `;
 
-export const FeaturesTitle = styled.h1`
+export const FeaturesTitle = styled.h2`
   color: #fff;
   font-family: 'Public Sans';
   font-size: 42px;
@@ -112,7 +112,7 @@ export const FeaturesItem = styled.li`
 `;
 export const FeaturesItemIconContainer = styled.div``;
 
-export const FeaturesItemTitle = styled.h1`
+export const FeaturesItemTitle = styled.h2`
   color: #fff;
   font-family: 'Public Sans';
   font-size: 1.3em;
@@ -220,7 +220,7 @@ export const FeatureIlustrationItemNumber = styled.p`
   background: #73eea6;
 `;
 
-export const FeatureIlustrationItemTitle = styled.h1`
+export const FeatureIlustrationItemTitle = styled.h2`
   color: #000;
   font-family: 'Public Sans';
   font-size: 1.3em;

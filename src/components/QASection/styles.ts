@@ -43,7 +43,7 @@ export const QASectionContentContainer = styled.section`
   }
 `;
 
-export const QASectionTitle = styled.h1`
+export const QASectionTitle = styled.h2`
   color: #003c2f;
   font-family: 'Public Sans';
   font-size: 42px;
@@ -104,7 +104,7 @@ export const QASectionItemButton = styled.div`
   cursor: pointer;
 `;
 
-export const QASectionItemTitle = styled.h1`
+export const QASectionItemTitle = styled.h2`
   color: var(--Gray-100, #0f2016);
   font-family: 'Public Sans';
   font-size: 22px;
