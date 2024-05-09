@@ -18,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <title>10konto</title>
+        <title>
+          10konto | Encontrar produtos baratos em Angola nunca foi tão Uma
+          plataforma onde podes encontrar as melhores ofertas nos mercados
+        </title>
         <meta charSet='UTF-8'></meta>
         <meta property='og:title' content='10konto' />
         <meta
@@ -35,8 +38,8 @@ export default function RootLayout({
         />
         <meta
           name='keywords'
-          content='10konto, descontos, Preços baratos, Preços, Comida, Sócia'
-        ></meta>
+          content='socia, descontos, compras, 10konto, descontos, Preços baratos, Preços, Comida, Sócia, precos, comidas, mercados, '
+        />
         <meta name='robots' content='index, follow' />
         <meta property='og:image' content='./preview.png' />
         <meta name='twitter:card' content='summary' />

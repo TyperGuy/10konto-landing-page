@@ -21,7 +21,7 @@ export const Hero = () => {
         <HeroTextContainer>
           <HeroTitle>
             Encontrar produtos baratos em <mark>Angola</mark> nunca foi tão{' '}
-            <mark>simples</mark>
+            <mark>simples</mark> com 10konto.
           </HeroTitle>
           <HeroText>
             Uma plataforma onde podes encontrar as melhores ofertas nos mercados
