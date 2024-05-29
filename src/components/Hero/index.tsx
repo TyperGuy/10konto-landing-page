@@ -25,7 +25,7 @@ export const Hero = () => {
           </HeroTitle>
           <HeroText>
             Uma plataforma onde podemos encontrar as melhores ofertas em mais de
-            10 mercados
+            10 super mercados
           </HeroText>
           <HeroTextContainerButtons>
             <Link href={'#download'} passHref>
