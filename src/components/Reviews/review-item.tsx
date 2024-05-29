@@ -44,6 +44,7 @@ interface ReviewItemProps {
 }
 
 export const ReviewItem = ({ data }: ReviewItemProps) => {
+  const BASE_PATH = 'profile_pictures';
   const starts = [];
   const numberOfStart = data.stars;
   for (let x = 0; x < numberOfStart; x++) {
@@ -54,7 +55,7 @@ export const ReviewItem = ({ data }: ReviewItemProps) => {
     <ReviewsItem>
       <div className='top'>
         <ReviewsItemHeader>
-          <ReviewsItemHeaderPic src='/pic.png' />
+          <ReviewsItemHeaderPic src={BASE_PATH + '/' + data.profile_picture} />
           <div>
             <ReviewsItemHeaderName>{data.name}</ReviewsItemHeaderName>
             <ReviewsItemHeaderOcupation>
