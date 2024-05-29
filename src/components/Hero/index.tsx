@@ -20,11 +20,12 @@ export const Hero = () => {
       <HeroContentContainer>
         <HeroTextContainer>
           <HeroTitle>
-            Encontrar produtos baratos em <mark>Angola</mark> nunca foi tão{' '}
-            <mark>simples</mark> com 10konto.
+            A maior plataforma de <mark>comparação de preços</mark> em{' '}
+            <mark>Angola</mark>{' '}
           </HeroTitle>
           <HeroText>
-            Uma plataforma onde podes encontrar as melhores ofertas nos mercados
+            Uma plataforma onde podemos encontrar as melhores ofertas em mais de
+            10 mercados
           </HeroText>
           <HeroTextContainerButtons>
             <Link href={'#download'} passHref>

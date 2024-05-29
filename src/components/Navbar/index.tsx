@@ -20,10 +20,6 @@ import { BannerDownload } from '../BannerDownload';
 
 const menu = [
   {
-    title: 'Inicio',
-    link: '/',
-  },
-  {
     title: 'Funcionamento',
     link: '#funcionamento',
   },

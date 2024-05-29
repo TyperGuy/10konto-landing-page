@@ -82,7 +82,7 @@ export const MenuItem = styled.li<IMenuItem>`
   color: #000;
   text-align: center;
   font-family: 'Inter';
-  font-size: 1.1em;
+  font-size: 1.03em;
   font-style: normal;
   font-weight: ${({ active }) => (active ? '700' : '400')};
   line-height: 30px;
