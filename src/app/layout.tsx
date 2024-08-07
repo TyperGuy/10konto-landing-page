@@ -5,6 +5,8 @@ import './globals.css';
 import StyledComponentsRegistry from '~/lib/registry';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Navbar } from '~/components/Navbar';
+import { Footer } from '~/components/Footer';
 
 export default function RootLayout({
   children,
@@ -61,7 +63,9 @@ export default function RootLayout({
       />
 
       <body id='layout-body'>
+        <Navbar />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Footer />
       </body>
     </html>
   );

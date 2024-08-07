@@ -17,6 +17,7 @@ import {
 } from './styles';
 import { useEffect, useState } from 'react';
 import { BannerDownload } from '../BannerDownload';
+import { link } from 'fs';
 
 const menu = [
   {
@@ -57,40 +58,42 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-        <div className='navbar-content'>
+        <Link href='/'>
           <Logo className='logo-desktop'>
             <KontoLogo />
           </Logo>
+        </Link>
 
+        <Link href='/'>
           <Logo className='logo-mobile'>
             <KontoLogoMobile />
           </Logo>
+        </Link>
 
-          <MenuContainer>
-            {menu.map((item) => (
-              <Link key={item.title} href={item.link} passHref>
-                <MenuItem
-                  onMouseEnter={() => setItem(item.title)}
-                  onMouseLeave={() => setItem('')}
-                >
-                  {item.title}
-                  <div
-                    className='underline'
-                    style={{
-                      width: item.title === targetItem ? '80%' : '0',
-                      height: '3px',
-                      backgroundColor: '#29ba66',
-                      borderRadius: '4px',
-                      transition: 'all ease-in-out .4s',
-                    }}
-                  ></div>
-                </MenuItem>
-              </Link>
-            ))}
+        <MenuContainer>
+          {menu.map((item) => (
+            <Link key={item.title} href={item.link} passHref>
+              <MenuItem
+                onMouseEnter={() => setItem(item.title)}
+                onMouseLeave={() => setItem('')}
+              >
+                {item.title}
+                <div
+                  className='underline'
+                  style={{
+                    width: item.title === targetItem ? '80%' : '0',
+                    height: '3px',
+                    backgroundColor: '#29ba66',
+                    borderRadius: '4px',
+                    transition: 'all ease-in-out .4s',
+                  }}
+                ></div>
+              </MenuItem>
+            </Link>
+          ))}
 
-            <ButtonLogin>Criar conta</ButtonLogin>
-          </MenuContainer>
-        </div>
+          <ButtonLogin>Criar conta</ButtonLogin>
+        </MenuContainer>
 
         <ButtonMenuMobile
           isOpen={mobileOpen}

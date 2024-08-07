@@ -26,6 +26,7 @@ export const NavbarContentContainer = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
   }
 
   ${CONTENT_MAX_WIDTH}
@@ -55,6 +56,7 @@ export const Logo = styled.div`
   width: auto;
   height: auto;
   max-width: 288px;
+  cursor: pointer;
 
   @media (max-width: 1190px) {
     width: 240px;

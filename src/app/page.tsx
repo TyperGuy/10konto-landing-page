@@ -9,17 +9,14 @@ import { Footer } from '~/components/Footer';
 import { Features } from '~/components/Features';
 import { Partners } from '~/components/Partners';
 
-
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
       <Hero />
       <Partners />
       <Features />
       <Reviews />
       <QASection />
-      <Footer />
     </main>
   );
 }

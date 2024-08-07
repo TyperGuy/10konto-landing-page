@@ -21,6 +21,7 @@ import Instagram from '~/assets/linkdin.svg';
 
 import Logo from '~/assets/logo2.svg';
 import { BannerDownload } from '../BannerDownload';
+import Link from 'next/link';
 
 export const Footer = () => {
   const networks = [
@@ -33,7 +34,6 @@ export const Footer = () => {
     { title: 'Producto', status: '' },
     { title: 'Como funciona', status: '' },
     { title: 'Funcionalidades', status: 'New' },
-    { title: 'Ajudas', status: '' },
   ];
 
   const menu2 = [
@@ -74,6 +74,11 @@ export const Footer = () => {
                 {item?.status && <span>{item?.status}</span>}
               </FooterMenuItem>
             ))}
+            <Link href='termos_de_uso'>
+              <FooterMenuItem key={'termos'}>
+                {'Termos e políticas de uso'}
+              </FooterMenuItem>
+            </Link>
           </FooterMenu>
 
           <FooterMenu data-aos='fade-up' data-aos-anchor-placement='top-bottom'>

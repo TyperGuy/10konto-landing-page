@@ -1,0 +1,76 @@
+
+[
+  {
+    "id": "1",
+    "titulo": "Aceitação dos termos",
+    "descricao": "Ao utilizar a aplicação 10konto, concorda com estes Termos de Utilização. Se não concordar com algum dos termos, por favor, não utilize a aplicação.",
+    "artigos": []
+  },
+  {
+    "id": "2",
+    "titulo": "Descrição do serviço",
+    "descricao": "A 10konto é uma aplicação de consulta de preços em Angola. Fornecemos informações atualizadas sobre os preços de diversos produtos e serviços para ajudar os utilizadores a tomar decisões informadas.",
+    "artigos": []
+  },
+  {
+    "id": "3",
+    "titulo": "Recolha e utilização de dados",
+    "descricao": "",
+    "artigos": [
+      "i.Informações Recolhidas: Recolhemos informações sobre os seus gostos e preferências, incluindo produtos visualizados e consultados na aplicação.",
+      "ii.Utilização dos Dados: Utilizamos essas informações para melhorar a experiência do utilizador, personalizar recomendações e fornecer um serviço mais relevante.",
+      "iii.Dados Pessoais: Não venderemos as suas informações pessoais nem as partilharemos com terceiros sem o seu consentimento expresso, exceto conforme exigido por lei."
+    ]
+  },
+  {
+    "id": "4",
+    "titulo": "Proteção de dados e privacidade",
+    "descricao": "",
+    "artigos": [
+      "i.Segurança dos Dados: Implementamos medidas de segurança para proteger os seus dados contra acesso não autorizado, alteração, divulgação ou destruição.",
+     "ii.Política de Privacidade: A nossa Política de Privacidade fornece detalhes adicionais sobre como recolhemos, utilizamos e protegemos as suas informações pessoais. Recomenda-se a leitura da nossa Política de Privacidade."
+    ]
+  },
+  {
+    "id": "5",
+    "titulo": "Conteúdo e propriedade intelectual",
+    "descricao": "",
+    "artigos": [
+    "i.Propriedade: Todo o conteúdo disponibilizado na aplicação, incluindo textos, imagens, logótipos e gráficos, é propriedade da 10konto ou dos seus licenciadores e está protegido por leis de direitos de autor.",
+     "ii.Utilização Restrita: O utilizador não deve reproduzir, distribuir, modificar, criar trabalhos derivados, exibir publicamente, executar publicamente, republicar, descarregar, armazenar ou transmitir qualquer um dos materiais na nossa aplicação, exceto conforme permitido nestes termos."
+    ]
+  },
+  {
+    "id": "6",
+    "titulo": "Utilização aceitável",
+    "descricao": "",
+    "artigos": [
+      "i.Conduta do Utilizador: Concorda em utilizar a aplicação apenas para fins lícitos e de maneira que não infrinja os direitos de terceiros, nem restrinja ou iniba o uso e aproveitamento da aplicação por qualquer outra pessoa.",
+      "ii.Proibições: É proibido usar a aplicação para transmitir, enviar ou carregar qualquer material que seja difamatório, ofensivo, indecente, ou que infrinja os direitos de terceiros."
+    ]
+  },
+  {
+    "id": "7",
+    "titulo": "Alterações aos termos de utilização",
+    "descricao": "Reservamo-nos o direito de modificar estes Termos de Utilização a qualquer momento. Notificaremos os utilizadores sobre quaisquer alterações significativas. A utilização contínua da aplicação após tais notificações constitui a aceitação dos novos termos.",
+    "artigos": []
+  },
+  {
+    "id": "8",
+    "titulo": "Limitação de responsabilidade",
+    "descricao": "A 10konto não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa vontade ou outras perdas intangíveis, resultantes de (i) seu uso ou incapacidade de usar a aplicação; (ii) qualquer conduta ou conteúdo de terceiros na aplicação; (iii) qualquer conteúdo obtido da aplicação; e (iv) acesso, uso ou alteração não autorizados das suas transmissões ou conteúdo.",
+    "artigos": []
+  },
+  {
+    "id": "9",
+    "titulo": "Lei aplicável e jurisdição",
+    "descricao": "Estes Termos de Utilização serão regidos e interpretados de acordo com as leis de Angola. Qualquer disputa decorrente ou relacionada com estes termos estará sujeita à jurisdição exclusiva dos tribunais de Angola.",
+    "artigos": []
+  },
+  {
+    "id": "10",
+    "titulo": "Contacto",
+    "descricao": "Para mais informações ou para esclarecer quaisquer dúvidas, por favor, entre em contacto connosco através do e-mail: suporte@10konto.com.",
+    "artigos": []
+  }
+]
