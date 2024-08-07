@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "titulo": "Introdução",
+    "descricao": "O 10konto valoriza a privacidade dos seus utilizadores e compromete-se a proteger as informações pessoais recolhidas através da aplicação. Esta Política de Privacidade descreve como recolhemos, utilizamos, armazenamos e protegemos os dados dos utilizadores.",
+    "artigos": []
+  },
+  {
+    "id": "2",
+    "titulo": "Informações Recolhidas",
+    "descricao": "Recolhemos diferentes tipos de informações para fornecer e melhorar os nossos serviços.",
+    "artigos": [
+      "2.1 Informações Pessoais: Podemos recolher informações pessoais identificáveis, como nome, endereço de e-mail, número de telefone e outros dados semelhantes, quando o utilizador se regista na aplicação ou entra em contacto connosco.",
+      "2.2 Informações de Uso: Recolhemos informações sobre a utilização da aplicação, incluindo produtos visualizados e consultados, preferências e histórico de navegação.",
+      "2.3 Dados Técnicos: Podemos recolher informações técnicas, como o tipo de dispositivo utilizado, endereço IP, sistema operativo e tipo de navegador."
+    ]
+  },
+  {
+    "id": "3",
+    "titulo": "Utilização das Informações",
+    "descricao": "Utilizamos as informações recolhidas para diversos fins, incluindo melhorar os nossos serviços e comunicar com os utilizadores.",
+    "artigos": [
+      "3.1 Para Melhorar o Serviço: Utilizamos as informações recolhidas para melhorar a experiência do utilizador, personalizar recomendações e fornecer um serviço mais relevante.",
+      "3.2 Comunicações: Podemos utilizar os dados de contacto para enviar notificações importantes, atualizações de serviço e materiais promocionais, desde que tenhamos o consentimento do utilizador.",
+      "3.3 Segurança: Utilizamos os dados para monitorizar e melhorar a segurança da nossa aplicação e para prevenir atividades fraudulentas."
+    ]
+  },
+  {
+    "id": "4",
+    "titulo": "Partilha de Informações",
+    "descricao": "As informações pessoais dos utilizadores não serão vendidas, alugadas ou partilhadas com terceiros, excepto conforme descrito nesta política.",
+    "artigos": [
+      "4.1 Sem Venda de Dados Pessoais: Não venderemos, alugaremos ou partilharemos as suas informações pessoais com terceiros sem o seu consentimento expresso, excepto conforme exigido por lei.",
+      "4.2 Prestadores de Serviço: Podemos partilhar informações com prestadores de serviços terceiros que nos assistem na operação da aplicação, desde que estes estejam sujeitos a obrigações de confidencialidade.",
+      "4.3 Requisitos Legais: Poderemos divulgar informações pessoais se tal for exigido por lei ou se acreditarmos que essa ação é necessária para cumprir uma obrigação legal, proteger os nossos direitos, segurança ou a segurança de outros."
+    ]
+  },
+  {
+    "id": "5",
+    "titulo": "Proteção de Dados",
+    "descricao": "Implementamos várias medidas de segurança para proteger as informações pessoais dos utilizadores.",
+    "artigos": [
+      "5.1 Medidas de Segurança: Implementamos medidas de segurança apropriadas para proteger as informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Utilizamos tecnologias e procedimentos de segurança de ponta para proteger os dados dos utilizadores.",
+      "5.2 Retenção de Dados: Retemos as informações pessoais apenas pelo tempo necessário para cumprir os propósitos para os quais foram recolhidas ou conforme exigido por lei."
+    ]
+  },
+  {
+    "id": "6",
+    "titulo": "Direitos dos Utilizadores",
+    "descricao": "Os utilizadores têm determinados direitos relativos às suas informações pessoais.",
+    "artigos": [
+      "6.1 Acesso e Correção: Os utilizadores têm o direito de aceder e corrigir as suas informações pessoais armazenadas na aplicação. Podem fazer isso entrando em contacto connosco através do e-mail fornecido abaixo.",
+      "6.2 Eliminação de Dados: Os utilizadores têm o direito de solicitar a eliminação das suas informações pessoais. Atenderemos a tais pedidos, salvo se houver uma obrigação legal que nos exija manter esses dados."
+    ]
+  },
+  {
+    "id": "7",
+    "titulo": "Alterações à Política de Privacidade",
+    "descricao": "Podemos atualizar esta Política de Privacidade de tempos em tempos para refletir mudanças nas nossas práticas ou por outros motivos operacionais, legais ou regulamentares. Notificaremos os utilizadores sobre quaisquer alterações significativas através da aplicação ou por outros meios de comunicação.",
+    "artigos": []
+  },
+  {
+    "id": "8",
+    "titulo": "Contacto",
+    "descricao": "Para mais informações sobre esta Política de Privacidade ou para exercer os seus direitos relativos aos seus dados pessoais, por favor, entre em contacto connosco através do e-mail: suporte@10konto.com.",
+    "artigos": []
+  }
+]
