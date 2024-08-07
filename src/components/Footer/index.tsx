@@ -79,6 +79,11 @@ export const Footer = () => {
                 {'Termos e políticas de uso'}
               </FooterMenuItem>
             </Link>
+            <Link href='politicas_de_privacidade'>
+              <FooterMenuItem key={'termos'}>
+                {'Politicas de privacidade'}
+              </FooterMenuItem>
+            </Link>
           </FooterMenu>
 
           <FooterMenu data-aos='fade-up' data-aos-anchor-placement='top-bottom'>
