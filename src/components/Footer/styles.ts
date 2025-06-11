@@ -112,7 +112,11 @@ export const AppMiniPresentation = styled.div`
   }
 `;
 
-export const FooterLogo = styled.div``;
+export const FooterLogo = styled.div`
+  img {
+    width: 200px;
+  }
+`;
 
 export const FooterAppDescription = styled.p`
   color: #fff;
