@@ -222,7 +222,7 @@ interface RSTProps {
 
 export const ReviewsScrollTrack = styled.div<RSTProps>`
   height: 10px;
-  background-color: #29ba66;
+  background-color: #FF464A;
   border-radius: 10px;
   width: 200px;
   z-index: 3;

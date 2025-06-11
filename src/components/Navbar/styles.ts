@@ -92,7 +92,7 @@ export const MenuItem = styled.li<IMenuItem>`
   &:hover {
     
     /* font-weight: 700; */
-    color: #29ba66;
+    color: #FF464A;
     
   
   }

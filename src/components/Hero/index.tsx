@@ -41,7 +41,7 @@ export const Hero = () => {
           </HeroTextContainerButtons>
         </HeroTextContainer>
         <HeroImageContainer>
-          <img src='/hero-image.png' alt='' data-aos='zoom-y-out' />
+          <img src='/hero-section.svg' alt='' data-aos='zoom-y-out' />
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>

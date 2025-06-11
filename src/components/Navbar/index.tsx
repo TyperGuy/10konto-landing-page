@@ -1,5 +1,3 @@
-import KontoLogo from '~/assets/logo.svg';
-import KontoLogoMobile from '~/assets/logo-mobile.svg';
 
 import Link from 'next/link';
 import {
@@ -60,13 +58,13 @@ export const Navbar = () => {
       <NavbarContentContainer>
         <Link href='/'>
           <Logo className='logo-desktop'>
-            <KontoLogo />
+            <img width={240} src='/logo.png' alt='marcheapp' />
           </Logo>
         </Link>
 
         <Link href='/'>
           <Logo className='logo-mobile'>
-            <KontoLogoMobile />
+            <img src='/logo.png' alt='marcheapp' />
           </Logo>
         </Link>
 
@@ -83,7 +81,7 @@ export const Navbar = () => {
                   style={{
                     width: item.title === targetItem ? '80%' : '0',
                     height: '3px',
-                    backgroundColor: '#29ba66',
+                    backgroundColor: '#FF464A',
                     borderRadius: '4px',
                     transition: 'all ease-in-out .4s',
                   }}

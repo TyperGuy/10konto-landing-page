@@ -37,9 +37,9 @@ export const QAItem = ({ description, title, id }: QAItemProps) => {
       data-aos-anchor-placement='top-bottom'
     >
       <h2>
-        <AccordionButton _hover={{ bg: '#fff', color: '#29ba66' }}>
+        <AccordionButton _hover={{ bg: '#fff', color: '#FF464A' }}>
           <Flex align='center' width='100%' gap='20px'>
-            <Heading fontSize={'18px'} color='#29ba66'>
+            <Heading fontSize={'18px'} color='#FF464A'>
               {'0' + id}
             </Heading>
             <Heading fontSize={'18px'}>{title}</Heading>

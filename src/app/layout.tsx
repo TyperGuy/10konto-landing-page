@@ -21,27 +21,27 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <title>
-          10konto | A maior plataforma de comparação de preços em Angola -Uma
+          MarcheApp | A maior plataforma de comparação de preços em Angola -Uma
           plataforma onde podemos encontrar as melhores ofertas em mais de 10
           super mercados
         </title>
         <meta charSet='UTF-8'></meta>
-        <meta property='og:title' content='10konto' />
+        <meta property='og:title' content='MarcheApp' />
         <meta
           property='og:description'
-          content='10konto - A maior plataforma de comparação de preços em Angola'
+          content='MarcheApp - A maior plataforma de comparação de preços em Angola'
         />
         <meta
           property='description'
-          content='10konto - A maior plataforma de comparação de preços em Angola'
+          content='MarcheApp - A maior plataforma de comparação de preços em Angola'
         />
         <meta
           property='og:description'
-          content='10konto - A maior plataforma de comparação de preços em Angola'
+          content='MarcheApp - A maior plataforma de comparação de preços em Angola'
         />
         <meta
           name='keywords'
-          content='10konto - A maior plataforma de comparação de preços em Angola'
+          content='MarcheApp - A maior plataforma de comparação de preços em Angola'
         />
         <meta name='robots' content='index, follow' />
         <meta property='og:image' content='./preview.png' />
