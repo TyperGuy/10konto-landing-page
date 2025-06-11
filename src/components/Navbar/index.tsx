@@ -83,7 +83,7 @@ export const Navbar = () => {
                     style={{
                       width: item.title === targetItem ? '80%' : '0',
                       height: '3px',
-                      backgroundColor: '#29ba66',
+                      backgroundColor: '#FF464A',
                       borderRadius: '4px',
                       transition: 'all ease-in-out .4s',
                     }}

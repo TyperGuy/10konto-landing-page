@@ -269,7 +269,7 @@ export const QASectionContactsListItem = styled.li`
   .dot {
     width: 9px;
     height: 9px;
-    background-color: #29ba66;
+    background-color: #FF464A;
     border-radius: 100%;
     position: absolute;
     bottom: 0;
