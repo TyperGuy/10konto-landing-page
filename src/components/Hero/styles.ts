@@ -132,7 +132,7 @@ export const HeroButton = styled.button`
   font-weight: 700;
   line-height: 28px;
   cursor: pointer;
-  background: #29ba66;
+  background: #FF464A;
 
   @media (max-width: 605px) {
     max-width: 100%;

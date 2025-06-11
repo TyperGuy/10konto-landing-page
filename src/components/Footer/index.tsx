@@ -59,7 +59,7 @@ export const Footer = () => {
             data-aos-anchor-placement='top-bottom'
           >
             <FooterLogo>
-              <Logo />
+              <img src="/logo-white.svg" />
             </FooterLogo>
             <FooterAppDescription>
               O seu assistente para compras inteligentes, descubra os melhores
