@@ -117,7 +117,7 @@ export const Features = () => {
             data-aos='fade-up'
             data-aos-anchor-placement='top-bottom'
           >
-            Como funciona o 10konto
+            Como funciona o MarcheApp
           </FeaturesTitle>
           <FeaturesText
             data-aos='fade-up'

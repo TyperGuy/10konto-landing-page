@@ -201,7 +201,7 @@ export const FeatureIlustrationItem = styled.li`
 `;
 
 export const FeatureIlustrationItemNumber = styled.p`
-  color: rgba(0, 0, 0, 0.4);
+  color: #fff;
   font-family: 'Public Sans';
   font-size: 1em;
   font-style: normal;
@@ -217,7 +217,7 @@ export const FeatureIlustrationItemNumber = styled.p`
   gap: 10px;
   flex-shrink: 0;
   border-radius: 90px;
-  background: #73eea6;
+  background: #ff464a;
 `;
 
 export const FeatureIlustrationItemTitle = styled.h2`

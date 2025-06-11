@@ -3,13 +3,13 @@
   {
     "id": "1",
     "titulo": "Aceitação dos termos",
-    "descricao": "Ao utilizar a aplicação 10konto, concorda com estes Termos de Utilização. Se não concordar com algum dos termos, por favor, não utilize a aplicação.",
+    "descricao": "Ao utilizar a aplicação MarcheApp, concorda com estes Termos de Utilização. Se não concordar com algum dos termos, por favor, não utilize a aplicação.",
     "artigos": []
   },
   {
     "id": "2",
     "titulo": "Descrição do serviço",
-    "descricao": "A 10konto é uma aplicação de consulta de preços em Angola. Fornecemos informações atualizadas sobre os preços de diversos produtos e serviços para ajudar os utilizadores a tomar decisões informadas.",
+    "descricao": "A MarcheApp é uma aplicação de consulta de preços em Angola. Fornecemos informações atualizadas sobre os preços de diversos produtos e serviços para ajudar os utilizadores a tomar decisões informadas.",
     "artigos": []
   },
   {
@@ -36,7 +36,7 @@
     "titulo": "Conteúdo e propriedade intelectual",
     "descricao": "",
     "artigos": [
-    "i.Propriedade: Todo o conteúdo disponibilizado na aplicação, incluindo textos, imagens, logótipos e gráficos, é propriedade da 10konto ou dos seus licenciadores e está protegido por leis de direitos de autor.",
+    "i.Propriedade: Todo o conteúdo disponibilizado na aplicação, incluindo textos, imagens, logótipos e gráficos, é propriedade da MarcheApp ou dos seus licenciadores e está protegido por leis de direitos de autor.",
      "ii.Utilização Restrita: O utilizador não deve reproduzir, distribuir, modificar, criar trabalhos derivados, exibir publicamente, executar publicamente, republicar, descarregar, armazenar ou transmitir qualquer um dos materiais na nossa aplicação, exceto conforme permitido nestes termos."
     ]
   },
@@ -58,7 +58,7 @@
   {
     "id": "8",
     "titulo": "Limitação de responsabilidade",
-    "descricao": "A 10konto não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa vontade ou outras perdas intangíveis, resultantes de (i) seu uso ou incapacidade de usar a aplicação; (ii) qualquer conduta ou conteúdo de terceiros na aplicação; (iii) qualquer conteúdo obtido da aplicação; e (iv) acesso, uso ou alteração não autorizados das suas transmissões ou conteúdo.",
+    "descricao": "A MarcheApp não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa vontade ou outras perdas intangíveis, resultantes de (i) seu uso ou incapacidade de usar a aplicação; (ii) qualquer conduta ou conteúdo de terceiros na aplicação; (iii) qualquer conteúdo obtido da aplicação; e (iv) acesso, uso ou alteração não autorizados das suas transmissões ou conteúdo.",
     "artigos": []
   },
   {
@@ -70,7 +70,7 @@
   {
     "id": "10",
     "titulo": "Contacto",
-    "descricao": "Para mais informações ou para esclarecer quaisquer dúvidas, por favor, entre em contacto connosco através do e-mail: suporte@10konto.com.",
+    "descricao": "Para mais informações ou para esclarecer quaisquer dúvidas, por favor, entre em contacto connosco através do e-mail: suporte@marcheapp.com.",
     "artigos": []
   }
 ]
