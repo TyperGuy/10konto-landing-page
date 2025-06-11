@@ -19,26 +19,26 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <title>
-          10konto | Encontrar produtos baratos em Angola nunca foi tão Uma
+          MarcheApp | Encontrar produtos baratos em Angola nunca foi tão Uma
           plataforma onde podes encontrar as melhores ofertas nos mercados
         </title>
         <meta charSet='UTF-8'></meta>
-        <meta property='og:title' content='10konto' />
+        <meta property='og:title' content='MarcheApp' />
         <meta
           property='og:description'
-          content='10konto - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
+          content='MarcheApp - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
         />
         <meta
           property='description'
-          content='10konto - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
+          content='MarcheApp - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
         />
         <meta
           property='og:description'
-          content='10konto - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
+          content='MarcheApp - Encontrar produtos baratos em Angola nunca foi tão Uma plataforma onde podes encontrar as melhores ofertas nos mercados'
         />
         <meta
           name='keywords'
-          content='socia, descontos, compras, 10konto, descontos, Preços baratos, Preços, Comida, Sócia, precos, comidas, mercados, angola supermercado, shopping, sales, frutas, bebidas, coxas, socias'
+          content='socia, descontos, compras, MarcheApp, descontos, Preços baratos, Preços, Comida, Sócia, precos, comidas, mercados, angola supermercado, shopping, sales, frutas, bebidas, coxas, socias'
         />
         <meta name='robots' content='index, follow' />
         <meta property='og:image' content='./preview.png' />

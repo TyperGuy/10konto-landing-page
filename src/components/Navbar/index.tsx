@@ -1,4 +1,4 @@
-import KontoLogo from '~/assets/logo.svg';
+import KontoLogo from '~/assets/logo.png';
 import KontoLogoMobile from '~/assets/logo-mobile.svg';
 
 import Link from 'next/link';
@@ -63,11 +63,11 @@ export const Navbar = () => {
       <NavbarContentContainer>
         <div className='navbar-content'>
           <Logo className='logo-desktop'>
-            <KontoLogo />
+            <img src='/logo.png' alt='marcheapp' />
           </Logo>
 
           <Logo className='logo-mobile'>
-            <KontoLogoMobile />
+            <img src='/logo.png' alt='marcheapp' />
           </Logo>
 
           <MenuContainer>

@@ -21,7 +21,7 @@ export const Hero = () => {
         <HeroTextContainer>
           <HeroTitle>
             Encontrar produtos baratos em <mark>Angola</mark> nunca foi tão{' '}
-            <mark>simples</mark> com 10konto.
+            <mark>simples</mark> com MarcheApp.
           </HeroTitle>
           <HeroText>
             Uma plataforma onde podes encontrar as melhores ofertas nos mercados
@@ -40,7 +40,7 @@ export const Hero = () => {
           </HeroTextContainerButtons>
         </HeroTextContainer>
         <HeroImageContainer>
-          <img src='/hero-image.png' alt='' data-aos='zoom-y-out' />
+          <img src='/hero-section.svg' alt='' data-aos='zoom-y-out' />
         </HeroImageContainer>
       </HeroContentContainer>
     </HeroContainer>
