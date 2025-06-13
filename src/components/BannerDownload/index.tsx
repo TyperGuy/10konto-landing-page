@@ -10,7 +10,6 @@ import {
 export const BannerDownload = () => {
   return (
     <BannerContainer>
-     
       <BannerTitle>
         Baixe o aplicativo e comece já a economizar nas suas compras
       </BannerTitle>
@@ -19,28 +18,34 @@ export const BannerDownload = () => {
       </BannerDescription>
 
       <BannerGroupButtons>
-        <BannerButton
-          data-aos='zoom-in'
-          data-aos-anchor-placement='top-bottom'
-          data-aos-delay={300}
-          data-aos-duration={500}
+        <div
+          style={{
+            width: '200px',
+            padding: ' 10px',
+            backgroundColor: '#222',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            borderRadius: '10px',
+          }}
         >
-          <img src='/app_store.png' />
-        </BannerButton>
-        <BannerButton
-          data-aos='zoom-in'
-          data-aos-anchor-placement='top-bottom'
-          data-aos-delay={600}
-          data-aos-duration={500}
+          {' '}
+          <img style={{ width: '80%' }} src='/app_store.png' />
+        </div>
+        <div
+          style={{
+            width: '200px',
+            padding: ' 10px',
+            backgroundColor: '#222',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            borderRadius: '10px',
+          }}
         >
-          <img src='/play_store.png' />
-        </BannerButton>
-        <BannerButton className='mobile'>
-          <img src='/app_store.png' />
-        </BannerButton>
-        <BannerButton className='mobile'>
-          <img src='/play_store.png' />
-        </BannerButton>
+          {' '}
+          <img style={{ width: '80%' }} src='/play_store.png' />
+        </div>
       </BannerGroupButtons>
     </BannerContainer>
   );

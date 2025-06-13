@@ -32,10 +32,9 @@ export const Hero = () => {
               {' '}
               <HeroButton>Baixar a APP</HeroButton>
             </Link>
-            <Link href={'#funcionamento'} passHref>
+            <Link href='/seja-um-parceiro' passHref>
               <SecondayHeroButton>
-                <PiMouseSimpleDuotone fontSize='1.4em' />
-                <span> Saber mais</span>
+                <span>Seja um parceiro</span>
               </SecondayHeroButton>
             </Link>
           </HeroTextContainerButtons>
